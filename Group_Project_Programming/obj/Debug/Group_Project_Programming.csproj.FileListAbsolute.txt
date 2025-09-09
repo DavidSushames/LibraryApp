@@ -1,0 +1,43 @@
+C:\Users\david.sushames\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\Group_Project_Programming.csproj.AssemblyReference.cache
+C:\Users\david.sushames\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\Group_Project_Programming.csproj.SuggestedBindingRedirects.cache
+C:\Users\david.sushames\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\LibraryForms.MenuForm.resources
+C:\Users\david.sushames\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\LibraryForms.NewItemForm.resources
+C:\Users\david.sushames\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\LibraryForms.NewUserForm.resources
+C:\Users\david.sushames\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\Group_Project_Programming.Properties.Resources.resources
+C:\Users\david.sushames\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\Group_Project_Programming.ViewItemsForm.resources
+C:\Users\david.sushames\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\Group_Project_Programming.ViewUsersForm.resources
+C:\Users\david.sushames\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\Group_Project_Programming.csproj.GenerateResource.cache
+C:\Users\david.sushames\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\Group_Project_Programming.csproj.CoreCompileInputs.cache
+C:\Users\david.sushames\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\bin\Debug\Group_Project_Programming.exe.config
+C:\Users\david.sushames\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\bin\Debug\Group_Project_Programming.exe
+C:\Users\david.sushames\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\bin\Debug\Group_Project_Programming.pdb
+C:\Users\david.sushames\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\Group_Project_Programming.exe
+C:\Users\david.sushames\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\Group_Project_Programming.pdb
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\bin\Debug\Group_Project_Programming.pdb
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\Group_Project_Programming.csproj.AssemblyReference.cache
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\LibraryForms.MenuForm.resources
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\LibraryForms.NewItemForm.resources
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\LibraryForms.NewUserForm.resources
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\Group_Project_Programming.Properties.Resources.resources
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\Group_Project_Programming.ViewItemsForm.resources
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\Group_Project_Programming.ViewUsersForm.resources
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\Group_Project_Programming.csproj.GenerateResource.cache
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\Group_Project_Programming.csproj.CoreCompileInputs.cache
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\Group_Project_Programming.pdb
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\bin\Debug\Group_Project_Programming.exe.config
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\bin\Debug\Group_Project_Programming.exe
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Group Project Programming\Group_Project_Programming\obj\Debug\Group_Project_Programming.exe
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Assignment 2 - Group Project - Library App\Group_Project_Programming\bin\Debug\Group_Project_Programming.exe.config
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Assignment 2 - Group Project - Library App\Group_Project_Programming\bin\Debug\Group_Project_Programming.exe
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Assignment 2 - Group Project - Library App\Group_Project_Programming\bin\Debug\Group_Project_Programming.pdb
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Assignment 2 - Group Project - Library App\Group_Project_Programming\obj\Debug\Group_Project_Programming.csproj.AssemblyReference.cache
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Assignment 2 - Group Project - Library App\Group_Project_Programming\obj\Debug\LibraryForms.MenuForm.resources
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Assignment 2 - Group Project - Library App\Group_Project_Programming\obj\Debug\LibraryForms.NewItemForm.resources
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Assignment 2 - Group Project - Library App\Group_Project_Programming\obj\Debug\LibraryForms.NewUserForm.resources
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Assignment 2 - Group Project - Library App\Group_Project_Programming\obj\Debug\Group_Project_Programming.Properties.Resources.resources
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Assignment 2 - Group Project - Library App\Group_Project_Programming\obj\Debug\Group_Project_Programming.ViewItemsForm.resources
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Assignment 2 - Group Project - Library App\Group_Project_Programming\obj\Debug\Group_Project_Programming.ViewUsersForm.resources
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Assignment 2 - Group Project - Library App\Group_Project_Programming\obj\Debug\Group_Project_Programming.csproj.GenerateResource.cache
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Assignment 2 - Group Project - Library App\Group_Project_Programming\obj\Debug\Group_Project_Programming.csproj.CoreCompileInputs.cache
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Assignment 2 - Group Project - Library App\Group_Project_Programming\obj\Debug\Group_Project_Programming.exe
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Programming\Assignment 2 - Group Project - Library App\Group_Project_Programming\obj\Debug\Group_Project_Programming.pdb
