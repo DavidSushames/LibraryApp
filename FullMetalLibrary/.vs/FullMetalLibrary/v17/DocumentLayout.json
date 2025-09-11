@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Migrations\\20250911072759_InitialCreate.cs",
               "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Migrations\\20250911072759_InitialCreate.cs",
               "RelativeToolTip": "Migrations\\20250911072759_InitialCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-11T07:27:59.557Z",
               "EditorCaption": ""
@@ -51,8 +51,7 @@
               "RelativeToolTip": "Controllers\\BooksController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T07:27:09.224Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-11T07:27:09.224Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "Models\\Book.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T07:26:29.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-11T07:26:29.951Z"
             }
           ]
         }
