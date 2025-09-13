@@ -46,6 +46,7 @@ namespace FullMetalLibrary.Controllers
         // GET: Books/Create
         public IActionResult Create()
         {
+            ViewData["AuthorId"] = new SelectList(_context.Author, "Id", "Name");
             return View();
         }
 
@@ -78,6 +79,7 @@ namespace FullMetalLibrary.Controllers
             {
                 return NotFound();
             }
+            ViewData["AuthorId"] = new SelectList(_context.Author, "Id", "Name", book.AuthorId);
             return View(book);
         }
 

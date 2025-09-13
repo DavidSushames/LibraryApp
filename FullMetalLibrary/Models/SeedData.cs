@@ -12,6 +12,30 @@ namespace FullMetalLibrary.Models
             using (var context = new FullMetalLibraryContext(
                 serviceProvider.GetRequiredService<DbContextOptions<FullMetalLibraryContext>>()))
             {
+                context.Author.AddRange(
+                    new Author
+                    {
+                        Name = "William Powell",
+                        Id = 1
+                    },
+                    new Author
+                    {
+                        Name = "Charles Bronson",
+                        Id = 2  
+                    },
+                    new Author
+                    {
+                        Name = "Lee Marvin",
+                        Id = 3
+                    },
+                    new Author
+                    {
+                        Name = "Clint Eastwood",
+                        Id = 4
+                    }
+                );
+                //context.SaveChanges();
+
                 //Look for any movies
                 if (context.Book.Any())
                 {
@@ -21,7 +45,7 @@ namespace FullMetalLibrary.Models
                     new Book
                     {
                         Title = "The Anarchist's Cookbook",
-                        Author = "William Powell",
+                        AuthorId = 1,
                         PublishDate = DateTime.Parse("1/1/1971"),
                         Genre = "Reference",
                         Available = true
