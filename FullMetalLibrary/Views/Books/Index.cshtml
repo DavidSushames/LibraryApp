@@ -13,19 +13,19 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Title)
+                @Html.DisplayNameFor(model => model.First().Title)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Author)
+                @Html.DisplayNameFor(model => model.First().AuthorId)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PublishDate)
+                @Html.DisplayNameFor(model => model.First().PublishDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Genre)
+                @Html.DisplayNameFor(model => model.First().Genre)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Available)
+                @Html.DisplayNameFor(model => model.First().Available)
             </th>
             <th></th>
         </tr>
@@ -37,7 +37,7 @@
                 @Html.DisplayFor(modelItem => item.Title)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Author)
+                @Html.DisplayFor(modelItem => item.AuthorId)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.PublishDate)
