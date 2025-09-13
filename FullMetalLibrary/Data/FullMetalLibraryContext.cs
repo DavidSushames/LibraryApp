@@ -15,5 +15,6 @@ namespace FullMetalLibrary.Data
         }
 
         public DbSet<FullMetalLibrary.Models.Book> Book { get; set; } = default!;
+        public DbSet<FullMetalLibrary.Models.Admin> Admin { get; set; } = default!;
     }
 }
