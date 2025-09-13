@@ -16,3 +16,5 @@ namespace FullMetalLibrary.Models
         //public Author? AuthorNavigation { get; set; }
     }
 }
+
+//Author is one table where you can see all the authors.

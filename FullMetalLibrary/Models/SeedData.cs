@@ -36,7 +36,7 @@ namespace FullMetalLibrary.Models
                 );
                 //context.SaveChanges();
 
-                //Look for any movies
+                //Look for any books
                 if (context.Book.Any())
                 {
                     return;

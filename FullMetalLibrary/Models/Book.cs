@@ -20,3 +20,5 @@ namespace FullMetalLibrary.Models
         public Author? Author { get; set; }
     }
 }
+
+//Book is one table where you can see all the books.
