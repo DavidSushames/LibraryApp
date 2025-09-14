@@ -53,36 +53,36 @@ namespace FullMetalLibrary.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Admin");
+                    b.ToTable("Admin", (string)null);
                 });
 
             modelBuilder.Entity("FullMetalLibrary.Models.Book", b =>
-            {
-                b.Property<int>("Id")
-                    .ValueGeneratedOnAdd()
-                    .HasColumnType("int");
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
-                SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                b.Property<string>("Author")
-                    .HasColumnType("nvarchar(max)");
+                    b.Property<string>("Author")
+                        .HasColumnType("nvarchar(max)");
 
-                b.Property<bool>("Available")
-                    .HasColumnType("bit");
+                    b.Property<bool>("Available")
+                        .HasColumnType("bit");
 
-                b.Property<string>("Genre")
-                    .HasColumnType("nvarchar(max)");
+                    b.Property<string>("Genre")
+                        .HasColumnType("nvarchar(max)");
 
-                b.Property<DateTime>("PublishDate")
-                    .HasColumnType("datetime2");
+                    b.Property<DateTime>("PublishDate")
+                        .HasColumnType("datetime2");
 
-                b.Property<string>("Title")
-                    .HasColumnType("nvarchar(max)");
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
 
-                b.HasKey("Id");
+                    b.HasKey("Id");
 
-                b.ToTable("Book");
-            });
+                    b.ToTable("Book", (string)null);
+                });
 #pragma warning restore 612, 618
         }
     }

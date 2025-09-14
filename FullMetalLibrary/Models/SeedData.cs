@@ -15,22 +15,26 @@ namespace FullMetalLibrary.Models
                 context.Author.AddRange(
                     new Author
                     {
-                        Name = "William Powell",
+                        FirstName = "William",
+                        LastName = "Powell",
                         Id = 1
                     },
                     new Author
                     {
-                        Name = "Charles Bronson",
+                        FirstName = "Charles",
+                        LastName = "Bronson",
                         Id = 2  
                     },
                     new Author
                     {
-                        Name = "Lee Marvin",
+                        FirstName = "Lee",
+                        LastName = "Marvin",
                         Id = 3
                     },
                     new Author
                     {
-                        Name = "Clint Eastwood",
+                        FirstName = "Clint",
+                        LastName = "Eastwood",
                         Id = 4
                     }
                 );
