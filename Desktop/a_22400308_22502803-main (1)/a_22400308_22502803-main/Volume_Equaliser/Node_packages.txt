@@ -1,0 +1,44 @@
+#These packages used for navigation, jump to different pages.#
+npm install @react-navigation/native @react-navigation/stack
+
+#Screen safe area support "Notch area"#
+npm install react-native-safe-area-context
+npm install react-native-screens react-native-safe-area-context
+npm install react-native-screens react-native-safe-area-context
+
+
+#Gesture handling, its requierd by navigation and interactive components#
+npm install react-native-gesture-handler
+
+npm install react-native-screens
+
+#Used for the EQ sliders#
+npm install @react-native-community/slider
+
+npm install @react-navigation/native @react-navigation/stack react-native-safe-area-context react-native-gesture-handler react-native-screens
+
+#Use for handle audio playback and effects >> EQ# we have not yet fully developt to this level yet but make sure to have this. 
+npx install expo-av
+
+#install AsyncStorage#
+npm install @react-native-async-storage/async-storage
+
+expo install expo-file-system
+
+#This will allow background playback, volume control, and custom EQ#
+npm install react-native-track-player
+
+#Track player install#
+npx react-native link react-native-track-player
+npx pod-install
+
+#Android EQ package#
+npm install react-native-equalizer
+npx pod-install
+
+#Custome Dev Client / this keeps Expo goodies but allows native modlues# => for the Eq 
+npx expo prebuild 
+npx expo run: android 
+npx expo run: ios
+
+
