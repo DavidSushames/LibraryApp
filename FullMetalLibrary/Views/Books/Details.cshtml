@@ -9,6 +9,13 @@
 <div>
     <h4>Book</h4>
     <hr />
+    <form asp-controller="Books" asp-action="Index" method="get">
+        <p>
+            Title: <input type ="text" name="searchString"/>
+            <input type="submit" value="Search"/>
+        </p>
+    </form>
+
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Title)

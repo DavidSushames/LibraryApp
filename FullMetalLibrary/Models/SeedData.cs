@@ -45,7 +45,7 @@ namespace FullMetalLibrary.Models
                     new Book
                     {
                         Title = "The Anarchist's Cookbook",
-                        AuthorId = 1,
+                        Id = 1,
                         PublishDate = DateTime.Parse("1/1/1971"),
                         Genre = "Reference",
                         Available = true

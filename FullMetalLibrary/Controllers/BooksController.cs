@@ -20,8 +20,31 @@ namespace FullMetalLibrary.Controllers
         }
 
         // GET: Books
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string sortOrder, string searchString)
         {
+            //sort parameters
+            ViewData["TitleSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
+            ViewData["CurrentFilter"] = searchString;
+
+            var admins = from a in _context.Admin
+                            select a;
+
+            //searching
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                admins = admins.Where(a => a.UserName.Contains(searchString) ||
+                                           a.EmailAddress.Contains(searchString));
+            }
+
+            //sorting
+            admins = sortOrder switch
+            {
+                "name_desc" => admins.OrderByDescending(a => a.UserName),
+                "Date" => admins.OrderBy(a => a.CreatedAt),
+                "date_desc" => admins.OrderByDescending(a => a.CreatedAt),
+                _ => admins.OrderBy(a => a.UserName),
+            };
             return View(await _context.Book.ToListAsync());
         }
 
