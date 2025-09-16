@@ -17,6 +17,12 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Title)
         </dd>
+        <dt class="col-sm-2">
+            Author
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Author.Name)
+        </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.PublishDate)
         </dt>
@@ -34,14 +40,6 @@
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Available)
-        </dd>
-        
-        //Adding a Author section
-        <dt class="col-sm-2">
-            Author
-        </dt>
-        <dd class="col-sm-10">
-            @(Model.Author.Name ?? "Unknown Author")")
         </dd>
 
     </dl>

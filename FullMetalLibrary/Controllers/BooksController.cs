@@ -1,142 +1,108 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using FullMetalLibrary.Data;
 using FullMetalLibrary.Models;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace FullMetalLibrary.Controllers
 {
     public class BooksController : Controller
     {
         private readonly FullMetalLibraryContext _context;
+        public BooksController(FullMetalLibraryContext context) => _context = context;
 
-        public BooksController(FullMetalLibraryContext context)
-        {
-            _context = context;
-        }
-
-        // GET: Books
+        // Index: include Author so we can show Author.Name
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Book.ToListAsync());
+            var books = await _context.Book
+                                      .Include(b => b.Author)   // load author
+                                      .OrderBy(b => b.Title)
+                                      .ToListAsync();
+            return View(books);
         }
 
-        // GET: Books/Details/5
+        // GET: Details
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var book = await _context.Book
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (book == null)
-            {
-                return NotFound();
-            }
+                                     .Include(b => b.Author) // load author
+                                     .FirstOrDefaultAsync(m => m.Id == id);
+
+            if (book == null) return NotFound();
 
             return View(book);
         }
 
-        // GET: Books/Create
+        // GET: Create
         public IActionResult Create()
         {
-            ViewData["AuthorId"] = new SelectList(_context.Author, "Id", "Name");
+            PopulateAuthorDropDownList();
             return View();
         }
 
-        // POST: Books/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Author,PublishDate,Genre,Available")] Book book)
+        public async Task<IActionResult> Create([Bind("Title,AuthorId,PublishDate,Genre,Available")] Book book)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(book);
+                _context.Add(book); // AuthorId will be stored
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            PopulateAuthorDropDownList(book.AuthorId);
             return View(book);
         }
 
-        // GET: Books/Edit/5
+        // GET: Edit
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var book = await _context.Book.FindAsync(id);
-            if (book == null)
-            {
-                return NotFound();
-            }
-            ViewData["AuthorId"] = new SelectList(_context.Author, "Id", "Name", book.AuthorId);
+            if (book == null) return NotFound();
+
+            PopulateAuthorDropDownList(book.AuthorId);
             return View(book);
         }
 
-        // POST: Books/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Edit
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Author,PublishDate,Genre,Available")] Book book)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,AuthorId,PublishDate,Genre,Available")] Book book)
         {
-            if (id != book.Id)
-            {
-                return NotFound();
-            }
+            if (id != book.Id) return NotFound();
 
             if (ModelState.IsValid)
             {
-                try
-                {
-                    _context.Update(book);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!BookExists(book.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                _context.Update(book);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            PopulateAuthorDropDownList(book.AuthorId);
             return View(book);
         }
 
-        // GET: Books/Delete/5
+        // GET: Delete
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var book = await _context.Book
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (book == null)
-            {
-                return NotFound();
-            }
+                                     .Include(b => b.Author) // load author
+                                     .FirstOrDefaultAsync(m => m.Id == id);
+
+            if (book == null) return NotFound();
 
             return View(book);
         }
 
-        // POST: Books/Delete/5
+        // POST: Delete
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -145,15 +111,21 @@ namespace FullMetalLibrary.Controllers
             if (book != null)
             {
                 _context.Book.Remove(book);
+                await _context.SaveChangesAsync();
             }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool BookExists(int id)
+        private void PopulateAuthorDropDownList(object? selectedAuthor = null)
         {
-            return _context.Book.Any(e => e.Id == id);
+            // Order by LastName,FirstName, project to Id+Name for the SelectList
+            var authors = _context.Author
+                                  .OrderBy(a => a.LastName)
+                                  .ThenBy(a => a.FirstName)
+                                  .Select(a => new { a.Id, Name = a.FirstName + " " + a.LastName })
+                                  .ToList();
+
+            ViewBag.AuthorList = new SelectList(authors, "Id", "Name", selectedAuthor);
         }
     }
 }

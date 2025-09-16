@@ -10,13 +10,10 @@ namespace FullMetalLibrary.Data
     public class FullMetalLibraryContext : DbContext
     {
         public FullMetalLibraryContext(DbContextOptions<FullMetalLibraryContext> options)
-            : base(options)
-        {
-        }
+            : base(options) { }
 
-        public DbSet<FullMetalLibrary.Models.Book> Book { get; set; } = default!;
-
-        public DbSet<FullMetalLibrary.Models.Author> Author { get; set; } = default!;
+        public DbSet<Author> Author { get; set; } = default!;
+        public DbSet<Book> Book { get; set; } = default!;
         public DbSet<FullMetalLibrary.Models.Admin> Admin { get; set; } = default!;
     }
 }
