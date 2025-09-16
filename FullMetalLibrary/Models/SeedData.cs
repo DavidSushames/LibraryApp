@@ -16,29 +16,29 @@ namespace FullMetalLibrary.Models
                     new Author
                     {
                         FirstName = "William",
-                        LastName = "Powell",
-                        Id = 1
+                        LastName = "Powell"
+                        
                     },
                     new Author
                     {
                         FirstName = "Charles",
-                        LastName = "Bronson",
-                        Id = 2  
+                        LastName = "Bronson"
+                        
                     },
                     new Author
                     {
                         FirstName = "Lee",
-                        LastName = "Marvin",
-                        Id = 3
+                        LastName = "Marvin"
+                        
                     },
                     new Author
                     {
                         FirstName = "Clint",
-                        LastName = "Eastwood",
-                        Id = 4
+                        LastName = "Eastwood"
+                      
                     }
                 );
-                //context.SaveChanges();
+                
 
                 //Look for any books
                 if (context.Book.Any())
@@ -54,6 +54,7 @@ namespace FullMetalLibrary.Models
                         Genre = "Reference",
                         Available = true
                     }
+                    
                 );
                 context.SaveChanges();
             }

@@ -11,6 +11,7 @@ namespace FullMetalLibrary.Models
 
         [Display(Name = "Author")]
         public int AuthorId { get; set; }
+       
 
         [DataType(DataType.Date)]
         public DateTime PublishDate { get; set; }
