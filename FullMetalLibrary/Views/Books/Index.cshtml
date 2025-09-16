@@ -1,72 +1,81 @@
 ﻿@model IEnumerable<FullMetalLibrary.Models.Book>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Books";
 }
 
-<h1>Index</h1>
-<thead>
-    <tr>
-        <th>
-            <a asp-action="Index" asp-route-sortOrder="@ViewData["TitleSortParm"]">Title</a>
-        </th>
-        <th>
-            <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]">Publish Date</a>
-        </th>
-        <th>Author</th>
-        <th>Genre</th>
-        <th>Available</th>
-        <th></th>
-    </tr>
-</thead>
+<h1>Books</h1>
+
+<form asp-controller="Books" asp-action="Index" method="get">
+    <p>
+        Search: <input type="text" name="searchString" value="@ViewData["CurrentFilter"]" />
+        <input type="submit" value="Search" class="btn btn-primary" />
+    </p>
+</form>
+<div class="btn-group mb-3">
+    <a asp-action="Index" asp-route-sortOrder="az" asp-route-searchString="@ViewData["CurrentFilter"]" class="btn btn-outline-primary">⬆</a>
+    <a asp-action="Index" asp-route-sortOrder="za" asp-route-searchString="@ViewData["CurrentFilter"]" class="btn btn-outline-primary">⬇</a>
+</div>
+
+@if (ViewBag.NotFoundMessage != null)
+{
+    <div class="alert alert-warning">@ViewBag.NotFoundMessage</div>
+}
+@if (ViewBag.AdminMatched != null)
+{
+    <div class="alert alert-info">
+        Your search matched an <strong>Admin</strong>. Showing all books instead.
+    </div>
+}
+
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-success">Add New Book</a>
 </p>
-<table class="table">
+
+<table class="table table-striped">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.First().Title)
+                <a asp-action="Index"
+                   asp-route-sortOrder="@ViewData["TitleSortParm"]"
+                   asp-route-searchString="@ViewData["CurrentFilter"]">
+                    Title
+                </a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.First().AuthorId)
+                Author
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.First().PublishDate)
+                <a asp-action="Index"
+                   asp-route-sortOrder="@ViewData["DateSortParm"]"
+                   asp-route-searchString="@ViewData["CurrentFilter"]">
+                    Publish Date
+                </a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.First().Genre)
+                Genre
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.First().Available)
+                Available
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.AuthorId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.PublishDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Genre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Available)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Title</td>
+                <td>@(item.Author?.FirstName + " " + item.Author?.LastName)</td>
+                <td>@item.PublishDate.ToString("dd/MM/yyyy")</td>
+                <td>@item.Genre</td>
+                <td>@(item.Available ? "Yes" : "No")</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

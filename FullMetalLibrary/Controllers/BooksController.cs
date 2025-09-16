@@ -1,81 +1,114 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using FullMetalLibrary.Data;
 using FullMetalLibrary.Models;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace FullMetalLibrary.Controllers
 {
-    public class BooksController(FullMetalLibraryContext context) : Controller
+    public class BooksController : Controller
     {
-        private readonly FullMetalLibraryContext _context = context;
+        private readonly FullMetalLibraryContext _context;
+
+        public BooksController(FullMetalLibraryContext context)
+        {
+            _context = context;
+        }
 
         // GET: Books
         public async Task<IActionResult> Index(string sortOrder, string searchString)
         {
-            //sort parameters
-            ViewData["TitleSortParm"] = String.IsNullOrEmpty(sortOrder) ? "title_desc" : "";
-            ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
+            // Sorting parameters
+            ViewData["TitleSortParm"] = string.IsNullOrEmpty(sortOrder) ? "title_desc" : "";
+            ViewData["AuthorSortParm"] = sortOrder == "author_az" ? "author_za" : "author_az";
+            ViewData["DateSortParm"] = sortOrder == "date_asc" ? "date_desc" : "Date";
             ViewData["CurrentFilter"] = searchString;
 
-            var books = from b in _context.Book.Include(b => b.Author)
-                        select b;
+            var books = _context.Book.Include(b => b.Author).AsQueryable();
+            //var books = from b in _context.Book.Include(b => b.Author)
+            //            select b;
 
-            //searching
-            if (!String.IsNullOrEmpty(searchString))
+            // Searching
+            if (!string.IsNullOrEmpty(searchString))
             {
-                books = books.Where(b =>
-                b.Title.Contains(searchString) ||
-                b.Genre.Contains(searchString) ||
-                b.Author.Name.Contains(searchString));
-            };
+                //Search bar in Books 
+                bool bookMatch = books.Any(b =>
+                    b.Title.Contains(searchString) ||
+                    b.Genre.Contains(sortOrder) ||
+                    b.Author.FirstName.Contains(searchString) ||
+                    b.Author.LastName.Contains(searchString));
 
-            //sorting
+                //Search bar in Admins 
+                bool adminMatch = _context.Admin.Any(a =>
+                    a.UserName.Contains(searchString) ||
+                    a.EmailAddress.Contains(searchString));
+
+                if (bookMatch)
+                {
+                    books = books.Where(b =>
+                    b.Title.Contains(searchString) ||
+                    b.Genre.Contains(searchString) ||
+                    b.Author.FirstName.Contains(searchString) ||
+                    b.Author.LastName.Contains(searchString));
+                }
+                else if (adminMatch)
+                {
+                    //this method checks if the admin matched, and keep all books but flag it
+                    ViewBag.AdminMatched = true;
+                }
+                else
+                {
+                    //if nothing matched, return empty list
+                    ViewBag.NotFoundMessage = $"No results found for '{searchString} in the Library system";
+                    return View(new List<Book>());
+                }
+
+            }
+
+            // Sorting
             books = sortOrder switch
             {
-                "title_desc" => books.OrderByDescending(b => b.Title),
-                "Date" => books.OrderBy(b => b.PublishDate),
-                "date_desc" => books.OrderByDescending(b => b.PublishDate),
-                _ => books.OrderBy(b => b.Title),
+                "az" => books
+                        .OrderBy(b => b.Title)
+                        .ThenBy(b => b.Author.LastName)
+                        .ThenBy(b => b.Author.FirstName),
+                "za" => books
+                        .OrderByDescending(b => b.Title)
+                        .ThenByDescending(b => b.Author.LastName)
+                        .ThenByDescending(b => b.Author.FirstName),
+                _ => books.OrderBy(b => b.Title)
             };
+
             return View(await books.ToListAsync());
         }
 
-        // GET: Books/Details/5
+        // GET: Details
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var book = await _context.Book
+                .Include(b => b.Author)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (book == null)
-            {
-                return NotFound();
-            }
+
+            if (book == null) return NotFound();
 
             return View(book);
         }
 
-        // GET: Books/Create
+        // GET: Create
         public IActionResult Create()
         {
-            ViewData["AuthorId"] = new SelectList(_context.Author, "Id", "Name");
+            PopulateAuthorDropDownList();
             return View();
         }
 
-        // POST: Books/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,Author,PublishDate,Genre,Available")] Book book)
+        public async Task<IActionResult> Create([Bind("Title,AuthorId,PublishDate,Genre,Available")] Book book)
         {
             if (ModelState.IsValid)
             {
@@ -83,80 +116,54 @@ namespace FullMetalLibrary.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            PopulateAuthorDropDownList(book.AuthorId);
             return View(book);
         }
 
-        // GET: Books/Edit/5
+        // GET: Edit
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var book = await _context.Book.FindAsync(id);
-            if (book == null)
-            {
-                return NotFound();
-            }
-            ViewData["AuthorId"] = new SelectList(_context.Author, "Id", "Name", book.AuthorId);
+            if (book == null) return NotFound();
+
+            PopulateAuthorDropDownList(book.AuthorId);
             return View(book);
         }
 
-        // POST: Books/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: Edit
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,Author,PublishDate,Genre,Available")] Book book)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,AuthorId,PublishDate,Genre,Available")] Book book)
         {
-            if (id != book.Id)
-            {
-                return NotFound();
-            }
+            if (id != book.Id) return NotFound();
 
             if (ModelState.IsValid)
             {
-                try
-                {
-                    _context.Update(book);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!BookExists(book.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                _context.Update(book);
+                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            PopulateAuthorDropDownList(book.AuthorId);
             return View(book);
         }
 
-        // GET: Books/Delete/5
+        // GET: Delete
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var book = await _context.Book
+                .Include(b => b.Author)
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (book == null)
-            {
-                return NotFound();
-            }
+
+            if (book == null) return NotFound();
 
             return View(book);
         }
 
-        // POST: Books/Delete/5
+        // POST: Delete
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -165,10 +172,20 @@ namespace FullMetalLibrary.Controllers
             if (book != null)
             {
                 _context.Book.Remove(book);
+                await _context.SaveChangesAsync();
             }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
+        }
+
+        private void PopulateAuthorDropDownList(object? selectedAuthor = null)
+        {
+            var authors = _context.Author
+                .OrderBy(a => a.LastName)
+                .ThenBy(a => a.FirstName)
+                .Select(a => new { a.Id, Name = a.FirstName + " " + a.LastName })
+                .ToList();
+
+            ViewBag.AuthorList = new SelectList(authors, "Id", "Name", selectedAuthor);
         }
 
         private bool BookExists(int id)
