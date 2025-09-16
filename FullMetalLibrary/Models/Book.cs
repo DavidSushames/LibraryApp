@@ -18,5 +18,6 @@ namespace FullMetalLibrary.Models
         public bool Available { get; set; }
 
         public Author? Author { get; set; }
+        
     }
 }

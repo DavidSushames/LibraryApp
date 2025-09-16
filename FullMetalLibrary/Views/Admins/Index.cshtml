@@ -5,6 +5,20 @@
 }
 
 <h1>Index</h1>
+<thead>
+    <tr>
+        <th>
+            <a asp-action="Index" asp-route-sortOrder="@ViewData["TitleSortParm"]">Title</a>
+        </th>
+        <th>
+            <a asp-action="Index" asp-route-sortOrder="@ViewData["DateSortParm"]">Publish Date</a>
+        </th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Available</th>
+        <th></th>
+    </tr>
+</thead>
 
 <p>
     <a asp-action="Create">Create New</a>

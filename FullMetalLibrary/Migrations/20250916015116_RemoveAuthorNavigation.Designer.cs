@@ -4,6 +4,7 @@ using FullMetalLibrary.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FullMetalLibrary.Migrations
 {
     [DbContext(typeof(FullMetalLibraryContext))]
-    partial class FullMetalLibraryContextModelSnapshot : ModelSnapshot
+    [Migration("20250916015116_RemoveAuthorNavigation")]
+    partial class RemoveAuthorNavigation
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

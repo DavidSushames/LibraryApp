@@ -10,42 +10,39 @@ using FullMetalLibrary.Models;
 
 namespace FullMetalLibrary.Controllers
 {
-    public class BooksController : Controller
+    public class BooksController(FullMetalLibraryContext context) : Controller
     {
-        private readonly FullMetalLibraryContext _context;
-
-        public BooksController(FullMetalLibraryContext context)
-        {
-            _context = context;
-        }
+        private readonly FullMetalLibraryContext _context = context;
 
         // GET: Books
         public async Task<IActionResult> Index(string sortOrder, string searchString)
         {
             //sort parameters
-            ViewData["TitleSortParm"] = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewData["TitleSortParm"] = String.IsNullOrEmpty(sortOrder) ? "title_desc" : "";
             ViewData["DateSortParm"] = sortOrder == "Date" ? "date_desc" : "Date";
             ViewData["CurrentFilter"] = searchString;
 
-            var admins = from a in _context.Admin
-                            select a;
+            var books = from b in _context.Book.Include(b => b.Author)
+                        select b;
 
             //searching
             if (!String.IsNullOrEmpty(searchString))
             {
-                admins = admins.Where(a => a.UserName.Contains(searchString) ||
-                                           a.EmailAddress.Contains(searchString));
-            }
+                books = books.Where(b =>
+                b.Title.Contains(searchString) ||
+                b.Genre.Contains(searchString) ||
+                b.Author.Name.Contains(searchString));
+            };
 
             //sorting
-            admins = sortOrder switch
+            books = sortOrder switch
             {
-                "name_desc" => admins.OrderByDescending(a => a.UserName),
-                "Date" => admins.OrderBy(a => a.CreatedAt),
-                "date_desc" => admins.OrderByDescending(a => a.CreatedAt),
-                _ => admins.OrderBy(a => a.UserName),
+                "title_desc" => books.OrderByDescending(b => b.Title),
+                "Date" => books.OrderBy(b => b.PublishDate),
+                "date_desc" => books.OrderByDescending(b => b.PublishDate),
+                _ => books.OrderBy(b => b.Title),
             };
-            return View(await _context.Book.ToListAsync());
+            return View(await books.ToListAsync());
         }
 
         // GET: Books/Details/5
