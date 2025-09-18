@@ -1,22 +1,66 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+/* Background styling */
 body {
-  margin-bottom: 60px;
+    background-image: url('/images/FMLibrary.png'); /* replace with your image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #f0f0f0; /* bright text */
+    margin: 0;
+    padding: 0;
 }
+
+/* Headings all different fonts */
+h1 {
+    font-family: 'Stencil', sans-serif;
+    color: #383;
+    text-shadow: 2px 2px 5px #000;
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    color: #383;
+    text-shadow: 1px 1px 4px #000;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    color: #383;
+    text-shadow: 1px 1px 3px #000;
+}
+
+/* Links */
+a {
+    color: #383;
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #ddd;
+    }
+
+.navbar-brand,
+.nav-link {
+    color: #ddd !important; /* bright text */
+}
+
+    .nav-link:hover {
+        color: #ddd !important;
+    }
+
+/* Buttons */
+.btn {
+    background-color: #383;
+    color: black;
+    border: none;
+}
+
+    .btn:hover {
+        background-color: #e6b800;
+        color: #ddd;
+    }
+
+/* Card-style panels (for home page sections) */
+.card {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid
