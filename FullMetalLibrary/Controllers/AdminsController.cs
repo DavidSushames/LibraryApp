@@ -19,6 +19,35 @@ namespace FullMetalLibrary.Controllers
             _context = context;
         }
 
+        public IActionResult Login()
+        {
+            return View(new LoginViewModel());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(LoginViewModel model)
+        {
+            if (!ModelState.IsValid) return View(model);
+
+            var admin = await _context.Admin.FirstOrDefaultAsync(a => a.EmailAddress == model.Email && a.IsActive);
+
+            if (admin != null && PasswordHelper.VerifyPassword(model.Password, admin.PasswordHash))
+            {
+                HttpContext.Session.SetString("AdminUser", admin.UserName);
+                return RedirectToAction("Index", "Home");
+            }
+
+            ModelState.AddModelError("", "Invalid login attempt.");
+            return View(model);
+        }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login");
+        }
+
         // GET: Admins
         public async Task<IActionResult> Index()
         {

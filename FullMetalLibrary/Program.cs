@@ -10,6 +10,14 @@ builder.Services.AddDbContext<FullMetalLibraryContext>(options =>
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+// Enable session support
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);// this will auto logout after 30 mins 
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
 var app = builder.Build();
 
 using (var scope = app.Services.CreateScope())
@@ -36,6 +44,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Admins}/{action=Login}/{id?}");
 
 app.Run();
