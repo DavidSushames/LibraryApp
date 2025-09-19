@@ -1,6 +1,6 @@
 /* Background styling */
 body {
-    background-image: url('/images/FMLibrary.png'); /* replace with your image */
+    background-image: url('/images/LibraryBackground.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -39,14 +39,11 @@ a {
         color: #ddd;
     }
 
+/* Navbar */
 .navbar-brand,
 .nav-link {
-    color: #ddd !important; /* bright text */
+    color: #ddd !important;
 }
-
-    .nav-link:hover {
-        color: #ddd !important;
-    }
 
 /* Buttons */
 .btn {
@@ -63,4 +60,22 @@ a {
 /* Card-style panels (for home page sections) */
 .card {
     background-color: rgba(0, 0, 0, 0.6);
-    border: 1px solid
+    border: 1px solid #383;
+}
+
+/* Tables (global white tables) */
+.table,
+.table td,
+.table th {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border-color: #ddd !important;
+}
+
+    .table a {
+        color: #007bff !important;
+    }
+
+        .table a:hover {
+            color: #ff6600 !important;
+        }

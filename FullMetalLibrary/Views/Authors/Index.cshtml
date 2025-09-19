@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<FullMetalLibrary.Models.Author>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Authors";
 }
 
-<h1>Index</h1>
+<h1>Authors</h1>
 <form asp-controller="Authors" asp-action="Index" method="get">
     <p>
         Search: <input type="text" name="searchString" value="@ViewData["CurrentFilter"]" />
@@ -26,7 +26,7 @@
 @if (ViewBag.AdminMatched != null)
 {
     <div class="alert alert-info">
-        Your search matched an <strong>Admin</strong>. Showing all books instead.
+        Your search matched an <strong>Admin</strong>. Showing all authors instead.
     </div>
 }
 
