@@ -110,6 +110,10 @@ namespace FullMetalLibrary.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Title,AuthorId,PublishDate,Genre,Available")] Book book)
         {
+            if (book.PublishDate >= DateTime.Today)
+            {
+                ModelState.AddModelError("PublishDate", "Publish date must be in the past.");
+            }
             if (ModelState.IsValid)
             {
                 _context.Add(book);
@@ -138,7 +142,10 @@ namespace FullMetalLibrary.Controllers
         public async Task<IActionResult> Edit(int id, [Bind("Id,Title,AuthorId,PublishDate,Genre,Available")] Book book)
         {
             if (id != book.Id) return NotFound();
-
+            if (book.PublishDate >= DateTime.Today)
+            {
+                ModelState.AddModelError("PublishDate", "Publish date must be in the past.");
+            }
             if (ModelState.IsValid)
             {
                 _context.Update(book);

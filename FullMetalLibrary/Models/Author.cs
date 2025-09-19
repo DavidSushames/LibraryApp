@@ -10,9 +10,11 @@ namespace FullMetalLibrary.Models
         public int Id { get; set; }
 
         [Required]
+        [RegularExpression(@"^[A-Za-z\-]+$", ErrorMessage = "First name can only contain letters and hyphens.")]
         public string FirstName { get; set; } = string.Empty;
 
         [Required]
+        [RegularExpression(@"^[A-Za-z\-]+$", ErrorMessage = "Last name can only contain letters and hyphens.")]
         public string LastName { get; set; } = string.Empty;
 
         [NotMapped]

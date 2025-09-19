@@ -20,11 +20,9 @@ namespace FullMetalLibrary.Models
         [DataType(DataType.Date)]
         public DateTime PublishDate { get; set; }
 
-
-       
-        
-
-        public string? Genre { get; set; }
+        [Required]
+        [RegularExpression(@"^[A-Za-z\-]+$", ErrorMessage = "Genre can only contain letters and hyphens.")]
+        public string Genre { get; set; } = string.Empty;
 
         public bool Available { get; set; }
     }
