@@ -26,10 +26,27 @@
                             <a class="nav-link" asp-controller="Admins" asp-action="Index">Admins</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="TestPage">Test</a>
-                        </li>
                     </ul>
+
+                    <ul class="navbar-nav ms-auto">
+                        @if (Context.Session.GetString("AdminUser") != null)
+                        {
+                            <li class="nav-item">
+                                <span class="navbar-text me-2">
+                                    Hello, @Context.Session.GetString("AdminUser")
+                                </span>
+                                <a class="btn btn-outline-danger" asp-controller="Admins" asp-action="Logout">Logout</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="btn btn-outline-primary me-2" asp-controller="Admins" asp-action="Login">Login</a>
+                                <a class="btn btn-outline-success" asp-controller="Admins" asp-action="Register">Register</a>
+                            </li>
+                        }
+                    </ul>
+
                 </div>
             </div>
         </nav>

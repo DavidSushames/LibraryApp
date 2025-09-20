@@ -13,7 +13,7 @@ namespace FullMetalLibrary.Models
                     password: password,
                     salt: salt,
                     prf: KeyDerivationPrf.HMACSHA256,
-                    iterationCount: 10000,
+                    iterationCount: 100000,
                     numBytesRequested: 32));
 
             return $"{Convert.ToBase64String(salt)}.{hashed}";

@@ -5,9 +5,12 @@ using FullMetalLibrary.Data;
 using FullMetalLibrary.Models;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using FullMetalLibrary.Filter;
 
 namespace FullMetalLibrary.Controllers
 {
+    [AuthFilter]
     public class BooksController : Controller
     {
         private readonly FullMetalLibraryContext _context;
@@ -15,6 +18,18 @@ namespace FullMetalLibrary.Controllers
         public BooksController(FullMetalLibraryContext context)
         {
             _context = context;
+        }
+
+        //Checks if an admins logged in
+        private bool IsLoggedIn()
+        {
+            return HttpContext.Session.GetString("AdminUser") != null;
+        }
+
+        //Login Get
+        public IActionResult Login()
+        {
+            return View(new LoginViewModel());
         }
 
         // GET: Books

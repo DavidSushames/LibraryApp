@@ -18,8 +18,11 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 
+
+builder.Services.AddHttpContextAccessor();
 var app = builder.Build();
 
+//Seed database 
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
@@ -40,10 +43,12 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseSession(); // Enable session middleware
+
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Admins}/{action=Login}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

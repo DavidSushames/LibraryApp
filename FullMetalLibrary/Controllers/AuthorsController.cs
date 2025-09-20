@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using FullMetalLibrary.Data;
 using FullMetalLibrary.Models;
+using FullMetalLibrary.Filter;
 
 namespace FullMetalLibrary.Controllers
 {
+    [AuthFilter]
     public class AuthorsController : Controller
     {
         private readonly FullMetalLibraryContext _context;
