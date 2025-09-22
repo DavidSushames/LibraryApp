@@ -1,6 +1,6 @@
-wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\Book.jpg
+wwwroot\images\FML.png
 wwwroot\images\LibraryBackground.jpg
 wwwroot\images\LibraryBackground.png
 wwwroot\js\site.js
@@ -61,3 +61,4 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\css\site.css
