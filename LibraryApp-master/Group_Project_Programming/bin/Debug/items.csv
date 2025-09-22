@@ -1,8 +1,0 @@
-Title,Type,IsBorrowed,BorrowedBy,BorrowDate,DueDate,TimesRenewed
-DefaultBook1,Book,False,,0001-01-01,0001-01-01,0
-DefaultBook2,Book,False,,0001-01-01,0001-01-01,0
-DefaultArticle1,Article,False,,0001-01-01,0001-01-01,0
-DefaultArticle2,Article,False,,0001-01-01,0001-01-01,0
-DefaultDigiMedia1,DigitalMedia,False,,0001-01-01,0001-01-01,0
-DefaultDigiMedia2,DigitalMedia,False,,0001-01-01,0001-01-01,0
-BigBook,Book,False,,0001-01-01,0001-01-01,0
