@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FullMetalLibrary.Migrations
 {
     [DbContext(typeof(FullMetalLibraryContext))]
-    [Migration("20250923030007_Midration")]
-    partial class Midration
+    [Migration("20250923031936_Database")]
+    partial class Database
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

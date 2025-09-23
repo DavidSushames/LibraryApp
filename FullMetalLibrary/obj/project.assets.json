@@ -7785,23 +7785,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nonch\\.nuget\\packages\\": {},
+    "C:\\Users\\david.sushames\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\FullMetalLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\FullMetalLibrary.csproj",
       "projectName": "FullMetalLibrary",
-      "projectPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\FullMetalLibrary.csproj",
-      "packagesPath": "C:\\Users\\nonch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\obj\\",
+      "projectPath": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\FullMetalLibrary.csproj",
+      "packagesPath": "C:\\Users\\david.sushames\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\nonch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\david.sushames\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7876,7 +7876,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
