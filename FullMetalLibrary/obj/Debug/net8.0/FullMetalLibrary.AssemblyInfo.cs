@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FullMetalLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e932c3236c9f013e8b2e788afa6cb185b5e9830c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49d559b34afe1c9c60c6d970a3acab78b25b5e06")]
 [assembly: System.Reflection.AssemblyProductAttribute("FullMetalLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FullMetalLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

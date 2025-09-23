@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace FullMetalLibrary.Migrations
 {
     /// <inheritdoc />
-    public partial class AddTablesToDatabase : Migration
+    public partial class Midration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -51,7 +51,7 @@ namespace FullMetalLibrary.Migrations
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     AuthorId = table.Column<int>(type: "int", nullable: false),
                     PublishDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Genre = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Genre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Available = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
