@@ -22,7 +22,6 @@ namespace FullMetalLibrary.Controllers
         }
 
         // GET: Authors
-        // GET: Authors
         public async Task<IActionResult> Index(string sortOrder, string searchString)
         {
             // Pass current search text to view

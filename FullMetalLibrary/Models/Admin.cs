@@ -11,17 +11,17 @@ namespace FullMetalLibrary.Models
         [Required, StringLength(50)] 
         public string UserName { get; set; } = string.Empty;
 
-        //Email?
+        //Email
         [Required, EmailAddress, StringLength(100)]
         public string EmailAddress { get; set; } = string.Empty ;
 
-        //Store a hash instead of paintext for login?
+        //Store a hash instead of plaintext for login?
         [Required, StringLength(256)]
         [Display(Name = "Password")]
         [DataType(DataType.Password)]
         public string PasswordHash { get; set; } = string.Empty;
 
-        //Can disable account without deletung it
+        //Can disable account without deleting it
         public bool IsActive { get; set; } = true;
 
         //Don't scaffold this in forms
@@ -30,5 +30,5 @@ namespace FullMetalLibrary.Models
     }
 }
 
-//Admin is one table where you can see all the approved accoutns that you can use to log in. MAYBE you can edit the password here, but only the pw of the account you're signed in with?
+//Admin is one table where you can see all the approved accounts that you can use to log in. You can edit the password here.
 //If you forget your password you're screwed, but that's beyond the scope of this assigment. Hopefully. Richa pls.
