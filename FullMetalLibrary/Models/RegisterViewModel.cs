@@ -16,7 +16,7 @@ namespace FullMetalLibrary.Models
         [StringLength(100, MinimumLength = 8,
             ErrorMessage = "Password must be at least 8 characters long and contain upper, lower, number, and special character.")]
         [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).+$",
-            ErrorMessage = "Password must contain upper, lower, number, and special character.")]
+            ErrorMessage = "Password must be at least 8 characters long and contain upper, lower, number, and special character.")]
         public string Password { get; set; } = string.Empty;
 
         [Required, DataType(DataType.Password)]

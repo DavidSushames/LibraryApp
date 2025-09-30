@@ -1,14 +1,13 @@
-﻿using System;
+﻿using FullMetalLibrary.Data;
+using FullMetalLibrary.Filter;
+using FullMetalLibrary.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using FullMetalLibrary.Data;
-using FullMetalLibrary.Models;
 using System.Text.RegularExpressions;
-using FullMetalLibrary.Filter;
+using System.Threading.Tasks;
 
 namespace FullMetalLibrary.Controllers
 {
@@ -21,6 +20,37 @@ namespace FullMetalLibrary.Controllers
             _context = context;
         }
 
+        // -------------------- INDEX / LIST ADMINS --------------------
+        [AuthFilter]
+        public async Task<IActionResult> Index(string sortOrder, string searchString)
+        {
+            // Keep track of current filter
+            ViewData["CurrentFilter"] = searchString;
+            ViewData["NameSortParm"] = string.IsNullOrEmpty(sortOrder) ? "az" : "";
+
+            // Get all admins
+            var admins = from a in _context.Admin select a;
+
+            // Filter by search string
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                admins = admins.Where(a => a.UserName.Contains(searchString)
+                                        || a.EmailAddress.Contains(searchString));
+            }
+
+            // Sort
+            admins = sortOrder switch
+            {
+                "az" => admins.OrderBy(a => a.UserName),
+                "za" => admins.OrderByDescending(a => a.UserName),
+                _ => admins.OrderBy(a => a.UserName)
+            };
+
+            var list = await admins.ToListAsync();
+            return View(list);
+        }
+
+        // -------------------- LOGIN --------------------
         public IActionResult Login()
         {
             if (HttpContext.Session.GetString("AdminUser") != null)
@@ -34,24 +64,41 @@ namespace FullMetalLibrary.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
-            if (!ModelState.IsValid) return View(model);
+            if (!ModelState.IsValid)
+                return View(model);
 
-            //this will check if the email exists and is active in the system
-            var admin = await _context.Admin.FirstOrDefaultAsync(a => a.EmailAddress == model.Email && a.IsActive);
+            // Find admin by email
+            var admin = await _context.Admin.FirstOrDefaultAsync(a => a.EmailAddress == model.Email);
             if (admin == null)
             {
-                ModelState.AddModelError("Email", "Email not found or inactive.");
+                ModelState.AddModelError("Email", "Invalid email or password.");
                 return View(model);
             }
-            //verify the password
-            if (PasswordHelper.VerifyPassword(model.Password, admin.PasswordHash))
+
+            // Verify password
+            bool passwordValid = false;
+            try
             {
-                HttpContext.Session.SetString("AdminUser", admin.UserName);
-                return RedirectToAction("Index", "Books");
+                passwordValid = PasswordHelper.VerifyPassword(model.Password, admin.PasswordHash);
+            }
+            catch { }
+
+            if (!passwordValid)
+            {
+                ModelState.AddModelError("Email", "Invalid email or password.");
+                return View(model);
             }
 
-            ModelState.AddModelError("","Invalid login attempt.");
-            return View(model);
+            // Check if account is active
+            if (!admin.IsActive)
+            {
+                ModelState.AddModelError("Email", "Account is disabled/inactive.");
+                return View(model);
+            }
+
+            // Login success
+            HttpContext.Session.SetString("AdminUser", admin.UserName);
+            return RedirectToAction("Index", "Home");
         }
 
         public IActionResult Logout()
@@ -60,27 +107,25 @@ namespace FullMetalLibrary.Controllers
             return RedirectToAction("Login");
         }
 
-        //Register
+        // -------------------- REGISTER --------------------
         [HttpGet]
         public IActionResult Register()
         {
             return View(new RegisterViewModel());
         }
 
-        //Admin Register
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register([Bind("UserName, Email, Password, ConfirmPassword")] RegisterViewModel model)
+        public async Task<IActionResult> Register([Bind("UserName,Email,Password,ConfirmPassword")] RegisterViewModel model)
         {
             if (!ModelState.IsValid) return View(model);
 
-            //Checks for any duplicate email addresses
             if (_context.Admin.Any(a => a.EmailAddress == model.Email))
             {
                 ModelState.AddModelError("Email", "Email address already in use.");
                 return View(model);
             }
-            //Strong password enforcement
+
             if (!IsStrongPassword(model.Password))
             {
                 ModelState.AddModelError("Password",
@@ -88,76 +133,46 @@ namespace FullMetalLibrary.Controllers
                 return View(model);
             }
 
-            if (ModelState.IsValid)
+            var admin = new Admin
             {
-                var admin = new Admin
-                {
-                    UserName = model.UserName,
-                    EmailAddress = model.Email,
-                    CreatedAt = DateTime.Now,
-                    IsActive = true
-                };
+                UserName = model.UserName,
+                EmailAddress = model.Email,
+                CreatedAt = DateTime.Now,
+                IsActive = true,
+                PasswordHash = PasswordHelper.HashPassword(model.Password)
+            };
 
-                //Hash the password
-                admin.PasswordHash = PasswordHelper.HashPassword(model.Password);
+            _context.Add(admin);
+            await _context.SaveChangesAsync();
 
-                _context.Add(admin);
-                await _context.SaveChangesAsync();
-
-                //Auto-login after registration
-                HttpContext.Session.SetString("AdminUser", admin.UserName);
-                return RedirectToAction("Index", "Home");
-            }
-
-            return View(model);
+            HttpContext.Session.SetString("AdminUser", admin.UserName);
+            return RedirectToAction("Index", "Home");
         }
 
-        // GET: Admins
-        [AuthFilter]
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Admin.ToListAsync());
-        }
-
-        // GET: Admins/Details/5
+        // -------------------- DETAILS --------------------
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
-            var admin = await _context.Admin
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (admin == null)
-            {
-                return NotFound();
-            }
+            var admin = await _context.Admin.FirstOrDefaultAsync(m => m.Id == id);
+            if (admin == null) return NotFound();
 
             return View(admin);
         }
 
-        // GET: Admins/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
+        // -------------------- CREATE --------------------
+        public IActionResult Create() => View();
 
-        // POST: Admins/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,UserName,EmailAddress,PasswordHash,IsActive")] Admin admin)
         {
-            //Checks for any duplicate email addresses
             if (_context.Admin.Any(a => a.EmailAddress == admin.EmailAddress))
             {
                 ModelState.AddModelError("EmailAddress", "Email address already in use.");
                 return View(admin);
             }
 
-            //Enforce password strength rules
             if (!IsStrongPassword(admin.PasswordHash))
             {
                 ModelState.AddModelError("PasswordHash",
@@ -168,8 +183,6 @@ namespace FullMetalLibrary.Controllers
             if (ModelState.IsValid)
             {
                 admin.CreatedAt = DateTime.Now;
-
-                //hash the password before storing it
                 admin.PasswordHash = PasswordHelper.HashPassword(admin.PasswordHash);
 
                 _context.Add(admin);
@@ -177,43 +190,24 @@ namespace FullMetalLibrary.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(admin);
-            //if (ModelState.IsValid)
-            //{
-            //    admin.CreatedAt = DateTime.Now;
-            //    _context.Add(admin);
-            //    await _context.SaveChangesAsync();
-            //    return RedirectToAction(nameof(Index));
-            //}
-            //return View(admin);
         }
 
-        // GET: Admins/Edit/5
+        // -------------------- EDIT --------------------
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
             var admin = await _context.Admin.FindAsync(id);
-            if (admin == null)
-            {
-                return NotFound();
-            }
+            if (admin == null) return NotFound();
+
             return View(admin);
         }
 
-        // POST: Admins/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,UserName,EmailAddress,PasswordHash,IsActive,CreatedAt")] Admin admin)
         {
-            if (id != admin.Id)
-            {
-                return NotFound();
-            }
+            if (id != admin.Id) return NotFound();
 
             if (!string.IsNullOrEmpty(admin.PasswordHash) && !IsStrongPassword(admin.PasswordHash))
             {
@@ -226,50 +220,33 @@ namespace FullMetalLibrary.Controllers
             {
                 try
                 {
-                    //Hash the password if it has been changed
                     if (!string.IsNullOrEmpty(admin.PasswordHash))
-                    {
                         admin.PasswordHash = PasswordHelper.HashPassword(admin.PasswordHash);
-                    }
 
                     _context.Update(admin);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!AdminExists(admin.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    if (!AdminExists(admin.Id)) return NotFound();
+                    else throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
             return View(admin);
         }
 
-        // GET: Admins/Delete/5
+        // -------------------- DELETE --------------------
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
+            if (id == null) return NotFound();
 
-            var admin = await _context.Admin
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (admin == null)
-            {
-                return NotFound();
-            }
+            var admin = await _context.Admin.FirstOrDefaultAsync(m => m.Id == id);
+            if (admin == null) return NotFound();
 
             return View(admin);
         }
 
-        // POST: Admins/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -280,17 +257,11 @@ namespace FullMetalLibrary.Controllers
                 _context.Admin.Remove(admin);
                 await _context.SaveChangesAsync();
             }
-
-            //await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-
-        // Checks if an admin with the given ID exists
-        private bool AdminExists(int id)
-        {
-            return _context.Admin.Any(e => e.Id == id);
-        }
+        // -------------------- HELPERS --------------------
+        private bool AdminExists(int id) => _context.Admin.Any(e => e.Id == id);
 
         public bool IsStrongPassword(string password)
         {
