@@ -1,53 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\",
+  "WorkspaceRootPath": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\david.sushames\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\david.sushames\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\david.sushames\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:models\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\views\\admins\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:views\\admins\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\david.sushames\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:views\\books\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\david.sushames\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\david.sushames\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:views\\authors\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\david.sushames\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\views\\admins\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:views\\admins\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\david.sushames\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\david.sushames\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\views\\admins\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\david.sushames\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\views\\admins\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:views\\admins\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\david.sushames\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\david.sushames\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\david.sushames\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -58,44 +62,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\BooksController.cs*",
+              "RelativeToolTip": "Controllers\\BooksController.cs*",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAUwBYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T00:18:32.509Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AdminsController.cs",
+              "DocumentMoniker": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\AdminsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminsController.cs",
+              "ToolTip": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\AdminsController.cs",
+              "RelativeToolTip": "Controllers\\AdminsController.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAiwIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-27T03:56:23.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Books\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Books\\Index.cshtml",
+              "ToolTip": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Books\\Index.cshtml",
+              "RelativeToolTip": "Views\\Books\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-27T05:32:35.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\SeedData.cs",
               "RelativeDocumentMoniker": "Models\\SeedData.cs",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\SeedData.cs",
+              "ToolTip": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\SeedData.cs",
               "RelativeToolTip": "Models\\SeedData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAMwDAAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-28T21:42:38.684Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Books\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Books\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Books\\Index.cshtml",
-              "RelativeToolTip": "Views\\Books\\Index.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAowFEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-27T05:32:35.374Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Authors\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Authors\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Authors\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Authors\\Index.cshtml",
+              "ToolTip": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Authors\\Index.cshtml",
               "RelativeToolTip": "Views\\Authors\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -103,11 +138,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Admins\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Admins\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Admins\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Admins\\Index.cshtml",
+              "ToolTip": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Admins\\Index.cshtml",
               "RelativeToolTip": "Views\\Admins\\Index.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -115,23 +150,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminsController.cs",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\AdminsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AdminsController.cs",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\AdminsController.cs",
-              "RelativeToolTip": "Controllers\\AdminsController.cs",
-              "ViewState": "AgIAAPgAAAAAAAAAAAAYwBoBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T03:56:23.885Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AuthorsController.cs",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\AuthorsController.cs",
+              "DocumentMoniker": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\AuthorsController.cs",
               "RelativeDocumentMoniker": "Controllers\\AuthorsController.cs",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\AuthorsController.cs",
+              "ToolTip": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\AuthorsController.cs",
               "RelativeToolTip": "Controllers\\AuthorsController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -139,11 +162,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Admins\\Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Admins\\Login.cshtml",
               "RelativeDocumentMoniker": "Views\\Admins\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Admins\\Login.cshtml",
+              "ToolTip": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Admins\\Login.cshtml",
               "RelativeToolTip": "Views\\Admins\\Login.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -151,11 +174,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\Admin.cs",
+              "DocumentMoniker": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\Admin.cs",
               "RelativeDocumentMoniker": "Models\\Admin.cs",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\Admin.cs",
+              "ToolTip": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\Admin.cs",
               "RelativeToolTip": "Models\\Admin.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAQwBUAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -163,11 +186,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\LoginViewModel.cs",
               "RelativeToolTip": "Models\\LoginViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -175,11 +198,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -187,11 +210,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "Models\\RegisterViewModel.cs",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\RegisterViewModel.cs",
               "RelativeToolTip": "Models\\RegisterViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIAwwBEAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -199,11 +222,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

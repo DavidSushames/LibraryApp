@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace FullMetalLibrary.Models
 {
-    public class SeedData
+    public static class SeedData
     {
         public static void Initialize(IServiceProvider serviceProvider)
         {
@@ -22,8 +22,9 @@ namespace FullMetalLibrary.Models
                 new Author { FirstName = "Howard", LastName = "Lovecraft" }
             };
 
-            foreach (var author in authorsToAdd)
+            for (int i = 0; i < authorsToAdd.Length; i++)
             {
+                Author? author = authorsToAdd[i];
                 if (!context.Author.Any(a => a.FirstName == author.FirstName && a.LastName == author.LastName))
                 {
                     context.Author.Add(author);
@@ -38,9 +39,9 @@ namespace FullMetalLibrary.Models
             // --- Seed Books using only IDs ---
             var booksToAdd = new[]
             {
-                new { Title = "The Anarchist's Cookbook", AuthorIndex = 0, PublishDate = new DateTime(1971,1,1), Genre="Reference", Available=true },
-                new { Title = "The Shadow over Innsmouth", AuthorIndex = 4, PublishDate = new DateTime(1936,4,1), Genre="Horror", Available=true },
-                new { Title = "Cowboy 101", AuthorIndex = 3, PublishDate = new DateTime(1999,1,1), Genre="Western", Available=false }
+                new { Title = "The Anarchist's Cookbook", AuthorIndex = 0, PublishDate = new DateTime(1971, 1, 1, 0, 0, 0, DateTimeKind.Utc),  Genre="Reference", Available=true },
+                new { Title = "The Shadow over Innsmouth", AuthorIndex = 4, PublishDate = new DateTime(1936,4,1, 0, 0, 0, DateTimeKind.Utc),  Genre="Horror", Available=true },
+                new { Title = "Cowboy 101", AuthorIndex = 3, PublishDate = new DateTime(1999,1,1, 0, 0, 0, DateTimeKind.Utc),  Genre="Western", Available=false }
             };
 
             foreach (var b in booksToAdd)
