@@ -292,7 +292,7 @@ namespace FullMetalLibrary.Controllers
             return _context.Admin.Any(e => e.Id == id);
         }
 
-        private bool IsStrongPassword(string password)
+        public bool IsStrongPassword(string password)
         {
             if (string.IsNullOrEmpty(password)) return false;
 

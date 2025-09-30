@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMLTestProject", "..\FMLTestProject\FMLTestProject.csproj", "{CFA54AB0-1653-46EB-9993-F4C332180F09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{050831B7-9830-48EA-8146-047173C90E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{050831B7-9830-48EA-8146-047173C90E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{050831B7-9830-48EA-8146-047173C90E2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFA54AB0-1653-46EB-9993-F4C332180F09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA54AB0-1653-46EB-9993-F4C332180F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA54AB0-1653-46EB-9993-F4C332180F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA54AB0-1653-46EB-9993-F4C332180F09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
