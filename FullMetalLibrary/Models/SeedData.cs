@@ -1,5 +1,4 @@
 ﻿using FullMetalLibrary.Data;
-using FullMetalLibrary.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -7,12 +6,28 @@ namespace FullMetalLibrary.Models
 {
     public class SeedData
     {
+        // Used in Production (Program.cs)
         public static void Initialize(IServiceProvider serviceProvider)
         {
             using var context = new FullMetalLibraryContext(
                 serviceProvider.GetRequiredService<DbContextOptions<FullMetalLibraryContext>>());
 
-            // --- Seed Authors (add missing only) ---
+            Seed(context);
+        }
+
+        // Overload for Unit Testing (direct context)
+        public static void Initialize(FullMetalLibraryContext context)
+        {
+            Seed(context);
+        }
+
+        // Shared logic
+        private static void Seed(FullMetalLibraryContext context)
+        {
+            if (context.Author.Any() && context.Book.Any())
+                return; // already seeded
+
+            // --- Authors ---
             var authorsToAdd = new[]
             {
                 new Author { FirstName = "William", LastName = "Powell" },
@@ -29,13 +44,11 @@ namespace FullMetalLibrary.Models
                     context.Author.Add(author);
                 }
             }
+            context.SaveChanges();
 
-            context.SaveChanges(); // IDs assigned here
-
-            // Get all authors from DB
+            // --- Books ---
             var authors = context.Author.ToList();
 
-            // --- Seed Books using only IDs ---
             var booksToAdd = new[]
             {
                 new { Title = "The Anarchist's Cookbook", AuthorIndex = 0, PublishDate = new DateTime(1971,1,1), Genre="Reference", Available=true },

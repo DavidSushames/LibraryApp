@@ -33,6 +33,8 @@ namespace FullMetalLibrary.Controllers
         }
 
         // GET: Books
+        // In your BooksController - Update the Index method search logic:
+        // GET: Books
         public async Task<IActionResult> Index(string sortOrder, string searchString)
         {
             // Sorting parameters
@@ -42,31 +44,29 @@ namespace FullMetalLibrary.Controllers
             ViewData["CurrentFilter"] = searchString;
 
             var books = _context.Book.Include(b => b.Author).AsQueryable();
-            //var books = from b in _context.Book.Include(b => b.Author)
-            //            select b;
 
-            // Searching
+            // Searching - FIXED WITH NULL CHECKS
             if (!string.IsNullOrEmpty(searchString))
             {
-                //Search bar in Books 
+                //Search bar in Books - FIXED: Added null checks for Author
                 bool bookMatch = books.Any(b =>
-                    b.Title.Contains(searchString) ||
-                    b.Genre.Contains(sortOrder) ||
-                    b.Author.FirstName.Contains(searchString) ||
-                    b.Author.LastName.Contains(searchString));
+                    (b.Title != null && b.Title.Contains(searchString)) ||
+                    (b.Genre != null && b.Genre.Contains(searchString)) ||
+                    (b.Author != null && b.Author.FirstName != null && b.Author.FirstName.Contains(searchString)) ||
+                    (b.Author != null && b.Author.LastName != null && b.Author.LastName.Contains(searchString)));
 
                 //Search bar in Admins 
                 bool adminMatch = _context.Admin.Any(a =>
-                    a.UserName.Contains(searchString) ||
-                    a.EmailAddress.Contains(searchString));
+                    (a.UserName != null && a.UserName.Contains(searchString)) ||
+                    (a.EmailAddress != null && a.EmailAddress.Contains(searchString)));
 
                 if (bookMatch)
                 {
                     books = books.Where(b =>
-                    b.Title.Contains(searchString) ||
-                    b.Genre.Contains(searchString) ||
-                    b.Author.FirstName.Contains(searchString) ||
-                    b.Author.LastName.Contains(searchString));
+                        (b.Title != null && b.Title.Contains(searchString)) ||
+                        (b.Genre != null && b.Genre.Contains(searchString)) ||
+                        (b.Author != null && b.Author.FirstName != null && b.Author.FirstName.Contains(searchString)) ||
+                        (b.Author != null && b.Author.LastName != null && b.Author.LastName.Contains(searchString)));
                 }
                 else if (adminMatch)
                 {
@@ -79,7 +79,6 @@ namespace FullMetalLibrary.Controllers
                     ViewBag.NotFoundMessage = $"No results found for '{searchString} in the Library system";
                     return View(new List<Book>());
                 }
-
             }
 
             // Sorting
@@ -87,12 +86,12 @@ namespace FullMetalLibrary.Controllers
             {
                 "az" => books
                         .OrderBy(b => b.Title)
-                        .ThenBy(b => b.Author.LastName)
-                        .ThenBy(b => b.Author.FirstName),
+                        .ThenBy(b => b.Author != null ? b.Author.LastName : "")
+                        .ThenBy(b => b.Author != null ? b.Author.FirstName : ""),
                 "za" => books
                         .OrderByDescending(b => b.Title)
-                        .ThenByDescending(b => b.Author.LastName)
-                        .ThenByDescending(b => b.Author.FirstName),
+                        .ThenByDescending(b => b.Author != null ? b.Author.LastName : "")
+                        .ThenByDescending(b => b.Author != null ? b.Author.FirstName : ""),
                 _ => books.OrderBy(b => b.Title)
             };
 

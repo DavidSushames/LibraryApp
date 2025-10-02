@@ -412,3 +412,5 @@ C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Gr
 C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FMLTestProject\obj\Debug\net8.0\FMLTestProject.pdb
 C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FMLTestProject\obj\Debug\net8.0\FMLTestProject.genruntimeconfig.cache
 C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FMLTestProject\obj\Debug\net8.0\ref\FMLTestProject.dll
+C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FMLTestProject\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FMLTestProject\bin\Debug\net8.0\Moq.dll

@@ -11,6 +11,7 @@ using FullMetalLibrary.Filter;
 
 namespace FullMetalLibrary.Controllers
 {
+
     [AuthFilter]
     public class AuthorsController : Controller
     {

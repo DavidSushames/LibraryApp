@@ -1,12 +1,10 @@
-﻿using Microsoft.Build.Framework;
-using System.ComponentModel.DataAnnotations;
-using RequiredAttribute = Microsoft.Build.Framework.RequiredAttribute;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace FullMetalLibrary.Models
 {
     public class RegisterViewModel
     {
-        [Required,StringLength(50)]
+        [Required, StringLength(50)]
         public string UserName { get; set; } = string.Empty;
 
         [Required, EmailAddress]
