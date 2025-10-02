@@ -11,20 +11,9 @@ using FullMetalLibrary.Filter;
 namespace FullMetalLibrary.Controllers
 {
     [AuthFilter]
-    public class BooksController : Controller
+    public class BooksController(FullMetalLibraryContext context) : Controller
     {
-        private readonly FullMetalLibraryContext _context;
-
-        public BooksController(FullMetalLibraryContext context)
-        {
-            _context = context;
-        }
-
-        //Checks if an admins logged in
-        private bool IsLoggedIn()
-        {
-            return HttpContext.Session.GetString("AdminUser") != null;
-        }
+        private readonly FullMetalLibraryContext _context = context;
 
         //Login Get
         public IActionResult Login()
@@ -44,10 +33,15 @@ namespace FullMetalLibrary.Controllers
             ViewData["CurrentFilter"] = searchString;
 
             var books = _context.Book.Include(b => b.Author).AsQueryable();
+<<<<<<< HEAD
+=======
+           
+>>>>>>> 0eb5fad1b76ec1af27a6a18c1a386497137e2cf9
 
             // Searching - FIXED WITH NULL CHECKS
             if (!string.IsNullOrEmpty(searchString))
             {
+<<<<<<< HEAD
                 //Search bar in Books - FIXED: Added null checks for Author
                 bool bookMatch = books.Any(b =>
                     (b.Title != null && b.Title.Contains(searchString)) ||
@@ -59,14 +53,35 @@ namespace FullMetalLibrary.Controllers
                 bool adminMatch = _context.Admin.Any(a =>
                     (a.UserName != null && a.UserName.Contains(searchString)) ||
                     (a.EmailAddress != null && a.EmailAddress.Contains(searchString)));
+=======
+                //Search bar in Books 
+                bool bookMatch = await books.AnyAsync(b =>
+                    b.Title.Contains(searchString) ||
+                    b.Genre.Contains(sortOrder) ||
+                    b.Author!.FirstName.Contains(searchString) ||
+                    b.Author.LastName.Contains(searchString));
+
+                //Search bar in Admins 
+                bool adminMatch = await _context.Admin.AnyAsync(a =>
+                    a.UserName.Contains(searchString) ||
+                    a.EmailAddress.Contains(searchString));
+>>>>>>> 0eb5fad1b76ec1af27a6a18c1a386497137e2cf9
+
 
                 if (bookMatch)
                 {
                     books = books.Where(b =>
+<<<<<<< HEAD
                         (b.Title != null && b.Title.Contains(searchString)) ||
                         (b.Genre != null && b.Genre.Contains(searchString)) ||
                         (b.Author != null && b.Author.FirstName != null && b.Author.FirstName.Contains(searchString)) ||
                         (b.Author != null && b.Author.LastName != null && b.Author.LastName.Contains(searchString)));
+=======
+                    b.Title.Contains(searchString) ||
+                    b.Genre.Contains(searchString) ||
+                    b.Author!.FirstName.Contains(searchString) ||
+                    b.Author.LastName.Contains(searchString));
+>>>>>>> 0eb5fad1b76ec1af27a6a18c1a386497137e2cf9
                 }
                 else if (adminMatch)
                 {
@@ -86,12 +101,21 @@ namespace FullMetalLibrary.Controllers
             {
                 "az" => books
                         .OrderBy(b => b.Title)
+<<<<<<< HEAD
                         .ThenBy(b => b.Author != null ? b.Author.LastName : "")
                         .ThenBy(b => b.Author != null ? b.Author.FirstName : ""),
                 "za" => books
                         .OrderByDescending(b => b.Title)
                         .ThenByDescending(b => b.Author != null ? b.Author.LastName : "")
                         .ThenByDescending(b => b.Author != null ? b.Author.FirstName : ""),
+=======
+                        .ThenBy(b => b.Author!.LastName)
+                        .ThenBy(b => b.Author!.FirstName),
+                "za" => books
+                        .OrderByDescending(b => b.Title)
+                        .ThenByDescending(b => b.Author!.LastName)
+                        .ThenByDescending(b => b.Author!.FirstName),
+>>>>>>> 0eb5fad1b76ec1af27a6a18c1a386497137e2cf9
                 _ => books.OrderBy(b => b.Title)
             };
 
@@ -171,18 +195,27 @@ namespace FullMetalLibrary.Controllers
         }
 
         // GET: Delete
+        // GET: Book/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null) return NotFound();
 
-            var book = await _context.Book
-                .Include(b => b.Author)
-                .FirstOrDefaultAsync(m => m.Id == id);
+            // Find the book by primary key
+            var bookToDelete = await _context.Book.FindAsync(id);
 
-            if (book == null) return NotFound();
+            if (bookToDelete == null) return NotFound();
 
-            return View(book);
+            // Optionally, include the author name for the confirmation view
+            var model = new
+            {
+                bookToDelete.Id,
+                bookToDelete.Title,
+                AuthorName = bookToDelete.Author?.FirstName + " " + bookToDelete.Author?.LastName
+            };
+
+            return View(model);
         }
+
 
         // POST: Delete
         [HttpPost, ActionName("Delete")]
@@ -207,11 +240,6 @@ namespace FullMetalLibrary.Controllers
                 .ToList();
 
             ViewBag.AuthorList = new SelectList(authors, "Id", "Name", selectedAuthor);
-        }
-
-        private bool BookExists(int id)
-        {
-            return _context.Book.Any(e => e.Id == id);
         }
     }
 }

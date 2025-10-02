@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\FullMetalLibrary.csproj": {}
   },
   "projects": {
@@ -12,12 +13,29 @@
         "projectPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\FullMetalLibrary.csproj",
         "packagesPath": "C:\\Users\\nonch\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\obj\\",
+=======
+    "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\FullMetalLibrary.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\FullMetalLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\FullMetalLibrary.csproj",
+        "projectName": "FullMetalLibrary",
+        "projectPath": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\FullMetalLibrary.csproj",
+        "packagesPath": "C:\\Users\\david.sushames\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\david.sushames\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\obj\\",
+>>>>>>> 0eb5fad1b76ec1af27a6a18c1a386497137e2cf9
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\nonch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\david.sushames\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 0eb5fad1b76ec1af27a6a18c1a386497137e2cf9
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

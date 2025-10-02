@@ -11,14 +11,9 @@ using System.Threading.Tasks;
 
 namespace FullMetalLibrary.Controllers
 {
-    public class AdminsController : Controller
+    public class AdminsController(FullMetalLibraryContext context) : Controller
     {
-        private readonly FullMetalLibraryContext _context;
-
-        public AdminsController(FullMetalLibraryContext context)
-        {
-            _context = context;
-        }
+        private readonly FullMetalLibraryContext _context = context;
 
         // -------------------- INDEX / LIST ADMINS --------------------
         [AuthFilter]
@@ -76,12 +71,7 @@ namespace FullMetalLibrary.Controllers
             }
 
             // Verify password
-            bool passwordValid = false;
-            try
-            {
-                passwordValid = PasswordHelper.VerifyPassword(model.Password, admin.PasswordHash);
-            }
-            catch { }
+            bool passwordValid = PasswordHelper.VerifyPassword(model.Password, admin.PasswordHash);
 
             if (!passwordValid)
             {
@@ -120,7 +110,7 @@ namespace FullMetalLibrary.Controllers
         {
             if (!ModelState.IsValid) return View(model);
 
-            if (_context.Admin.Any(a => a.EmailAddress == model.Email))
+            if (await _context.Admin.AnyAsync(a => a.EmailAddress == model.Email))
             {
                 ModelState.AddModelError("Email", "Email address already in use.");
                 return View(model);
@@ -167,7 +157,7 @@ namespace FullMetalLibrary.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,UserName,EmailAddress,PasswordHash,IsActive")] Admin admin)
         {
-            if (_context.Admin.Any(a => a.EmailAddress == admin.EmailAddress))
+            if (await _context.Admin.AnyAsync(a => a.EmailAddress == admin.EmailAddress))
             {
                 ModelState.AddModelError("EmailAddress", "Email address already in use.");
                 return View(admin);
@@ -237,15 +227,27 @@ namespace FullMetalLibrary.Controllers
         }
 
         // -------------------- DELETE --------------------
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null) return NotFound();
+        // GET: Admin/Delete/5
+public async Task<IActionResult> Delete(int? id)
+{
+    if (id == null) return NotFound();
 
-            var admin = await _context.Admin.FirstOrDefaultAsync(m => m.Id == id);
-            if (admin == null) return NotFound();
+    // Use FindAsync for primary key lookup
+    var adminToDelete = await _context.Admin.FindAsync(id);
 
-            return View(admin);
-        }
+    if (adminToDelete == null) return NotFound();
+
+    // Only pass the fields needed for the delete confirmation view
+    var model = new Admin
+    {
+        Id = adminToDelete.Id,
+        UserName = adminToDelete.UserName,
+        EmailAddress = adminToDelete.EmailAddress
+    };
+
+    return View(model);
+}
+
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
@@ -263,7 +265,7 @@ namespace FullMetalLibrary.Controllers
         // -------------------- HELPERS --------------------
         private bool AdminExists(int id) => _context.Admin.Any(e => e.Id == id);
 
-        public bool IsStrongPassword(string password)
+        private static bool IsStrongPassword(string password)
         {
             if (string.IsNullOrEmpty(password)) return false;
 
