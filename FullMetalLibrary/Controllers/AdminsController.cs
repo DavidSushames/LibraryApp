@@ -265,7 +265,7 @@ public async Task<IActionResult> Delete(int? id)
         // -------------------- HELPERS --------------------
         private bool AdminExists(int id) => _context.Admin.Any(e => e.Id == id);
 
-        private static bool IsStrongPassword(string password)
+        public static bool IsStrongPassword(string password)
         {
             if (string.IsNullOrEmpty(password)) return false;
 

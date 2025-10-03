@@ -185,8 +185,9 @@ namespace FMLTestProject.Controllers
 
             // Assert
             Assert.IsInstanceOfType(result, typeof(ViewResult));
-            var viewResult = result as ViewResult;
-            var model = viewResult.Model as List<Book>;
+            var viewResult = (ViewResult)result;
+            Assert.IsInstanceOfType(viewResult.Model, typeof(List<Book>));
+            var model = (List<Book>)viewResult.Model;
             Assert.AreEqual(5, model.Count);
         }
 
@@ -1380,7 +1381,7 @@ namespace FMLTestProject.Controllers
             // Act & Assert
             foreach (var password in strongPasswords)
             {
-                Assert.IsTrue(_controller.IsStrongPassword(password), $"Password '{password}' should be strong");
+                Assert.IsTrue(AdminsController.IsStrongPassword(password), $"Password '{password}' should be strong");
             }
         }
 
@@ -1393,7 +1394,7 @@ namespace FMLTestProject.Controllers
             // Act & Assert
             foreach (var password in weakPasswords)
             {
-                Assert.IsFalse(_controller.IsStrongPassword(password), $"Password '{password}' should be weak");
+                Assert.IsFalse(AdminsController.IsStrongPassword(password), $"Password '{password}' should be weak");
             }
         }
 
@@ -1401,8 +1402,8 @@ namespace FMLTestProject.Controllers
         public void IsStrongPassword_NullOrEmpty_ReturnsFalse()
         {
             // Act & Assert
-            Assert.IsFalse(_controller.IsStrongPassword(""));
-            Assert.IsFalse(_controller.IsStrongPassword(null));
+            Assert.IsFalse(AdminsController.IsStrongPassword(""));
+            Assert.IsFalse(AdminsController.IsStrongPassword(null));
         }
     }
 
