@@ -1,59 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\",
+  "WorkspaceRootPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CFA54AB0-1653-46EB-9993-F4C332180F09}|..\\FMLTestProject\\FMLTestProject.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fmltestproject\\fmlcontrollerunittest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fullmetallibrary\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\fullmetallibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:fullmetallibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{CFA54AB0-1653-46EB-9993-F4C332180F09}|..\\FMLTestProject\\FMLTestProject.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fmltestproject\\fmlcontrollerunittest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\data\\fullmetallibrarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CFA54AB0-1653-46EB-9993-F4C332180F09}|..\\FMLTestProject\\FMLTestProject.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fmltestproject\\fmlmodelunittesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fullmetallibrary\\controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:controllers\\adminscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fullmetallibrary\\data\\fullmetallibrarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:data\\fullmetallibrarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fullmetallibrary\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:controllers\\authorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFA54AB0-1653-46EB-9993-F4C332180F09}|..\\FMLTestProject\\FMLTestProject.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fmltestproject\\fmlmodelunittesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CFA54AB0-1653-46EB-9993-F4C332180F09}|..\\FMLTestProject\\FMLTestProject.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fmltestproject\\testsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\views\\admins\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fullmetallibrary\\views\\admins\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:views\\admins\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fullmetallibrary\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fullmetallibrary\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\models\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fullmetallibrary\\models\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:models\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\dave\\onedrive - whitireia and weltec\\documents\\testing and secure coding\\groupassignment\\fullmetallibrary\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fullmetallibrary\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\FMLModelUnitTesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\TestSession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -63,108 +58,106 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FullMetalLibrary",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\FullMetalLibrary.csproj",
-              "RelativeDocumentMoniker": "FullMetalLibrary.csproj",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\FullMetalLibrary.csproj",
-              "RelativeToolTip": "FullMetalLibrary.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-03T00:34:37.276Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "FMLControllerUnitTest.cs",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\FMLControllerUnitTest.cs",
+              "DocumentMoniker": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FMLTestProject\\FMLControllerUnitTest.cs",
               "RelativeDocumentMoniker": "..\\FMLTestProject\\FMLControllerUnitTest.cs",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\FMLControllerUnitTest.cs",
+              "ToolTip": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FMLTestProject\\FMLControllerUnitTest.cs",
               "RelativeToolTip": "..\\FMLTestProject\\FMLControllerUnitTest.cs",
-              "ViewState": "AgIAANcCAAAAAAAAAAAQwOACAABaAAAAAAAAAA==",
+              "ViewState": "AgIAACUCAAAAAAAAAAAQwC0CAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T00:29:46.425Z",
+              "WhenOpened": "2025-10-03T06:15:05.718Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FMLModelUnitTesting.cs",
+              "DocumentMoniker": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FMLTestProject\\FMLModelUnitTesting.cs",
+              "RelativeDocumentMoniker": "..\\FMLTestProject\\FMLModelUnitTesting.cs",
+              "ToolTip": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FMLTestProject\\FMLModelUnitTesting.cs",
+              "RelativeToolTip": "..\\FMLTestProject\\FMLModelUnitTesting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T06:15:03.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "BooksController.cs",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Controllers\\BooksController.cs",
               "RelativeDocumentMoniker": "Controllers\\BooksController.cs",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\BooksController.cs",
-              "RelativeToolTip": "Controllers\\BooksController.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAwwCwAAAAzAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Controllers\\BooksController.cs*",
+              "RelativeToolTip": "Controllers\\BooksController.cs*",
+              "ViewState": "AgIAAMcAAAAAAAAAAAAuwMUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-03T00:29:46.53Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AuthorsController.cs",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\AuthorsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AuthorsController.cs",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\AuthorsController.cs",
-              "RelativeToolTip": "Controllers\\AuthorsController.cs",
-              "ViewState": "AgIAAKYAAAAAAAAAAAAkwLgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T00:29:46.532Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
               "Title": "FullMetalLibraryContext.cs",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Data\\FullMetalLibraryContext.cs",
+              "DocumentMoniker": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Data\\FullMetalLibraryContext.cs",
               "RelativeDocumentMoniker": "Data\\FullMetalLibraryContext.cs",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Data\\FullMetalLibraryContext.cs",
+              "ToolTip": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Data\\FullMetalLibraryContext.cs",
               "RelativeToolTip": "Data\\FullMetalLibraryContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T00:29:46.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T00:29:46.534Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "FMLModelUnitTesting.cs",
               "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\FMLModelUnitTesting.cs",
-              "RelativeDocumentMoniker": "..\\FMLTestProject\\FMLModelUnitTesting.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\..\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\FMLModelUnitTesting.cs",
               "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\FMLModelUnitTesting.cs",
-              "RelativeToolTip": "..\\FMLTestProject\\FMLModelUnitTesting.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\..\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\FMLModelUnitTesting.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-03T00:29:46.536Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AdminsController.cs",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\AdminsController.cs",
+              "DocumentMoniker": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Controllers\\AdminsController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminsController.cs",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\AdminsController.cs",
+              "ToolTip": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Controllers\\AdminsController.cs",
               "RelativeToolTip": "Controllers\\AdminsController.cs",
               "ViewState": "AgIAAPkAAAAAAAAAAAAIwAsBAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T00:29:46.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T00:29:46.538Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -172,23 +165,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "TestSession.cs",
               "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\TestSession.cs",
-              "RelativeDocumentMoniker": "..\\FMLTestProject\\TestSession.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\..\\..\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\TestSession.cs",
               "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\TestSession.cs",
-              "RelativeToolTip": "..\\FMLTestProject\\TestSession.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\..\\..\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\TestSession.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-03T00:29:46.539Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Admins\\Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Views\\Admins\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Admins\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Views\\Admins\\Create.cshtml",
+              "ToolTip": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Views\\Admins\\Create.cshtml",
               "RelativeToolTip": "Views\\Admins\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -196,11 +189,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
               "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Models\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "Models\\RegisterViewModel.cs",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Models\\RegisterViewModel.cs",
               "RelativeToolTip": "Models\\RegisterViewModel.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -208,11 +201,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 9,
               "Title": "PasswordHelper.cs",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\PasswordHelper.cs",
+              "DocumentMoniker": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Models\\PasswordHelper.cs",
               "RelativeDocumentMoniker": "Models\\PasswordHelper.cs",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\PasswordHelper.cs",
+              "ToolTip": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Models\\PasswordHelper.cs",
               "RelativeToolTip": "Models\\PasswordHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -220,11 +213,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Models\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Models\\LoginViewModel.cs",
               "RelativeToolTip": "Models\\LoginViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAACJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -232,11 +225,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 10,
               "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Models\\ErrorViewModel.cs",
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

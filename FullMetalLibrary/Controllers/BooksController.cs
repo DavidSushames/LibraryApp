@@ -7,6 +7,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using FullMetalLibrary.Filter;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Http; 
 
 namespace FullMetalLibrary.Controllers
 {
@@ -22,8 +24,6 @@ namespace FullMetalLibrary.Controllers
         }
 
         // GET: Books
-        // In your BooksController - Update the Index method search logic:
-        // GET: Books
         public async Task<IActionResult> Index(string sortOrder, string searchString)
         {
             // Sorting parameters
@@ -34,18 +34,16 @@ namespace FullMetalLibrary.Controllers
 
             var books = _context.Book.Include(b => b.Author).AsQueryable();
 
-            // Searching - FIXED WITH NULL CHECKS
             if (!string.IsNullOrEmpty(searchString))
             {
-                //Search bar in Books - FIXED: Added null checks for Author
-                bool bookMatch = books.Any(b =>
+                bool bookMatch = await books.AnyAsync(b =>
                     (b.Title != null && b.Title.Contains(searchString)) ||
                     (b.Genre != null && b.Genre.Contains(searchString)) ||
                     (b.Author != null && b.Author.FirstName != null && b.Author.FirstName.Contains(searchString)) ||
                     (b.Author != null && b.Author.LastName != null && b.Author.LastName.Contains(searchString)));
 
-                //Search bar in Admins 
-                bool adminMatch = _context.Admin.Any(a =>
+                // Search bar in Admins 
+                bool adminMatch = await _context.Admin.AnyAsync(a =>
                     (a.UserName != null && a.UserName.Contains(searchString)) ||
                     (a.EmailAddress != null && a.EmailAddress.Contains(searchString)));
 
@@ -59,13 +57,11 @@ namespace FullMetalLibrary.Controllers
                 }
                 else if (adminMatch)
                 {
-                    //this method checks if the admin matched, and keep all books but flag it
                     ViewBag.AdminMatched = true;
                 }
                 else
                 {
-                    //if nothing matched, return empty list
-                    ViewBag.NotFoundMessage = $"No results found for '{searchString} in the Library system";
+                    ViewBag.NotFoundMessage = $"No results found for '{searchString}' in the Library system";
                     return View(new List<Book>());
                 }
             }
@@ -160,27 +156,20 @@ namespace FullMetalLibrary.Controllers
         }
 
         // GET: Delete
-        // GET: Book/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null) return NotFound();
 
-            // Find the book by primary key
-            var bookToDelete = await _context.Book.FindAsync(id);
+            // Include the Author to avoid null reference
+            var book = await _context.Book
+                .Include(b => b.Author)
+                .FirstOrDefaultAsync(m => m.Id == id);
 
-            if (bookToDelete == null) return NotFound();
+            if (book == null) return NotFound();
 
-            // Optionally, include the author name for the confirmation view
-            var model = new
-            {
-                bookToDelete.Id,
-                bookToDelete.Title,
-                AuthorName = bookToDelete.Author?.FirstName + " " + bookToDelete.Author?.LastName
-            };
-
-            return View(model);
+            // Return the actual Book object
+            return View(book);
         }
-
 
         // POST: Delete
         [HttpPost, ActionName("Delete")]
@@ -205,6 +194,16 @@ namespace FullMetalLibrary.Controllers
                 .ToList();
 
             ViewBag.AuthorList = new SelectList(authors, "Id", "Name", selectedAuthor);
+        }
+
+        private bool BookExists(int id)
+        {
+            return _context.Book.Any(e => e.Id == id);
+        }
+
+        private bool IsLoggedIn()
+        {
+            return HttpContext.Session.GetString("AdminUser") != null;
         }
     }
 }
