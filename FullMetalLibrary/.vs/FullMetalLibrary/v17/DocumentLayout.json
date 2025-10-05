@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1AA76480-38C7-46EF-A431-5DBD54904E6B}|..\\FML_AutomationTestProject\\FML_AutomationTestProject.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fml_automationtestproject\\test1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1AA76480-38C7-46EF-A431-5DBD54904E6B}|..\\FML_AutomationTestProject\\FML_AutomationTestProject.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fml_automationtestproject\\fmlautamtion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fullmetallibrary\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -70,12 +70,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Test1.cs",
-              "DocumentMoniker": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FML_AutomationTestProject\\Test1.cs",
-              "RelativeDocumentMoniker": "..\\FML_AutomationTestProject\\Test1.cs",
-              "ToolTip": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FML_AutomationTestProject\\Test1.cs",
-              "RelativeToolTip": "..\\FML_AutomationTestProject\\Test1.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAuwEkAAAAJAAAAAAAAAA==",
+              "Title": "FMLAutamtion.cs",
+              "DocumentMoniker": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FML_AutomationTestProject\\FMLAutamtion.cs",
+              "RelativeDocumentMoniker": "..\\FML_AutomationTestProject\\FMLAutamtion.cs",
+              "ToolTip": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FML_AutomationTestProject\\FMLAutamtion.cs",
+              "RelativeToolTip": "..\\FML_AutomationTestProject\\FMLAutamtion.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAowGoAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-04T07:06:30.319Z",
               "IsPinned": true,
@@ -107,8 +107,7 @@
               "RelativeToolTip": "Properties\\launchSettings.json",
               "ViewState": "AgIAAA0AAAAAAAAAAAAswB0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-04T07:29:41.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-04T07:29:41.109Z"
             },
             {
               "$type": "Document",
@@ -120,8 +119,7 @@
               "RelativeToolTip": "..\\FMLTestProject\\FMLModelUnitTesting.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:15:03.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:15:03.77Z"
             },
             {
               "$type": "Document",
@@ -133,8 +131,7 @@
               "RelativeToolTip": "Controllers\\BooksController.cs",
               "ViewState": "AgIAAHAAAAAAAAAAAAAIwMUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T00:29:46.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T00:29:46.53Z"
             },
             {
               "$type": "Document",
@@ -146,8 +143,7 @@
               "RelativeToolTip": "Data\\FullMetalLibraryContext.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T00:29:46.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T00:29:46.534Z"
             },
             {
               "$type": "Document",
@@ -159,8 +155,7 @@
               "RelativeToolTip": "Controllers\\AdminsController.cs",
               "ViewState": "AgIAAAgBAAAAAAAAAAAqwBkBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T00:29:46.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T00:29:46.538Z"
             },
             {
               "$type": "Document",
@@ -172,8 +167,7 @@
               "RelativeToolTip": "..\\FMLTestProject\\FMLControllerUnitTest.cs",
               "ViewState": "AgIAACUCAAAAAAAAAAAQwC0CAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T06:15:05.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T06:15:05.718Z"
             },
             {
               "$type": "Document",
@@ -196,8 +190,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T00:29:46.528Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T00:29:46.528Z"
             },
             {
               "$type": "Document",
@@ -220,8 +213,7 @@
               "RelativeToolTip": "Views\\Admins\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-03T00:29:46.541Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T00:29:46.541Z"
             },
             {
               "$type": "Document",
@@ -233,8 +225,7 @@
               "RelativeToolTip": "Models\\RegisterViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAIBJwBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T00:29:46.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T00:29:46.543Z"
             },
             {
               "$type": "Document",
@@ -246,8 +237,7 @@
               "RelativeToolTip": "Models\\PasswordHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T00:29:46.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T00:29:46.545Z"
             },
             {
               "$type": "Document",
@@ -259,8 +249,7 @@
               "RelativeToolTip": "Models\\LoginViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAACJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T00:29:46.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T00:29:46.546Z"
             },
             {
               "$type": "Document",
@@ -272,8 +261,7 @@
               "RelativeToolTip": "Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-03T00:29:46.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-03T00:29:46.548Z"
             }
           ]
         }
