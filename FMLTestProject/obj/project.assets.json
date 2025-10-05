@@ -2677,6 +2677,64 @@
           "lib/netstandard2.0/NuGet.Versioning.dll": {}
         }
       },
+      "Selenium.Support/4.36.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.36.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.36.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux/native/selenium-manager": {
+            "assetType": "native",
+            "rid": "linux"
+          },
+          "runtimes/osx/native/selenium-manager": {
+            "assetType": "native",
+            "rid": "osx"
+          },
+          "runtimes/win/native/selenium-manager.exe": {
+            "assetType": "native",
+            "rid": "win"
+          }
+        }
+      },
+      "Selenium.WebDriverBackedSelenium/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.1.0"
+        },
+        "compile": {
+          "lib/net5.0/Selenium.WebDriverBackedSelenium.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Selenium.WebDriverBackedSelenium.dll": {}
+        }
+      },
       "System.ClientModel/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -3367,7 +3425,10 @@
           "Microsoft.EntityFrameworkCore": "9.0.9",
           "Microsoft.EntityFrameworkCore.InMemory": "9.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.9",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7",
+          "Selenium.Support": "4.36.0",
+          "Selenium.WebDriver": "4.36.0",
+          "Selenium.WebDriverBackedSelenium": "4.1.0"
         },
         "compile": {
           "bin/placeholder/FullMetalLibrary.dll": {}
@@ -7803,6 +7864,61 @@
         "nuget.versioning.nuspec"
       ]
     },
+    "Selenium.Support/4.36.0": {
+      "sha512": "3/kioF20M28FKkCccmxDqMYZy9j1G4H37dcHfPgTPiOAlQXrqV/moWoV56o2TVFLhZw7o53PlsMp6Y8br9Z3lg==",
+      "type": "package",
+      "path": "selenium.support/4.36.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml",
+        "selenium.support.4.36.0.nupkg.sha512",
+        "selenium.support.nuspec"
+      ]
+    },
+    "Selenium.WebDriver/4.36.0": {
+      "sha512": "jYehpVsZyC8Sn6BJJ2xr8vM9QyPTDks7MdrlfZQFxs3wa8Jg4LPHPnzEYRT1CY1vSSydxhBxuDJ8tnUxrXo9Qw==",
+      "type": "package",
+      "path": "selenium.webdriver/4.36.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Selenium.WebDriver.targets",
+        "buildTransitive/Selenium.WebDriver.targets",
+        "icon.png",
+        "lib/net8.0/WebDriver.dll",
+        "lib/net8.0/WebDriver.xml",
+        "lib/netstandard2.0/WebDriver.dll",
+        "lib/netstandard2.0/WebDriver.xml",
+        "runtimes/linux/native/selenium-manager",
+        "runtimes/osx/native/selenium-manager",
+        "runtimes/win/native/selenium-manager.exe",
+        "selenium.webdriver.4.36.0.nupkg.sha512",
+        "selenium.webdriver.nuspec"
+      ]
+    },
+    "Selenium.WebDriverBackedSelenium/4.1.0": {
+      "sha512": "tQ9iDx/oo4gl1N5JFz1YrwuxYz7XA8pgkiqyUvED6xUFhQualUzgWlfjymhPwdBx5uRYAJWro6w063Yt2P3Y4g==",
+      "type": "package",
+      "path": "selenium.webdriverbackedselenium/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "lib/net45/Selenium.WebDriverBackedSelenium.dll",
+        "lib/net46/Selenium.WebDriverBackedSelenium.dll",
+        "lib/net47/Selenium.WebDriverBackedSelenium.dll",
+        "lib/net48/Selenium.WebDriverBackedSelenium.dll",
+        "lib/net5.0/Selenium.WebDriverBackedSelenium.dll",
+        "lib/netstandard2.0/Selenium.WebDriverBackedSelenium.dll",
+        "lib/netstandard2.1/Selenium.WebDriverBackedSelenium.dll",
+        "selenium.webdriverbackedselenium.4.1.0.nupkg.sha512",
+        "selenium.webdriverbackedselenium.nuspec"
+      ]
+    },
     "System.ClientModel/1.0.0": {
       "sha512": "I3CVkvxeqFYjIVEP59DnjbeoGNfo/+SZrCLpRz2v/g0gpCHaEMPtWSY0s9k/7jR1rAsLNg2z2u1JRB76tPjnIw==",
       "type": "package",
@@ -9128,7 +9244,10 @@
       "MSTest.TestAdapter >= 3.6.4",
       "MSTest.TestFramework >= 3.6.4",
       "Microsoft.NET.Test.Sdk >= 17.11.1",
-      "Moq >= 4.20.72"
+      "Moq >= 4.20.72",
+      "Selenium.Support >= 4.36.0",
+      "Selenium.WebDriver >= 4.36.0",
+      "Selenium.WebDriverBackedSelenium >= 4.1.0"
     ]
   },
   "packageFolders": {
@@ -9208,6 +9327,18 @@
           "Moq": {
             "target": "Package",
             "version": "[4.20.72, )"
+          },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[4.36.0, )"
+          },
+          "Selenium.WebDriver": {
+            "target": "Package",
+            "version": "[4.36.0, )"
+          },
+          "Selenium.WebDriverBackedSelenium": {
+            "target": "Package",
+            "version": "[4.1.0, )"
           }
         },
         "imports": [

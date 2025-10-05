@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QSK/UEPr17U=",
+  "dgSpecHash": "CXYnXtWsmu8=",
   "success": true,
   "projectFilePath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FMLTestProject\\FMLTestProject.csproj",
   "expectedPackageFiles": [
@@ -138,6 +138,9 @@
     "C:\\Users\\nonch\\.nuget\\packages\\nuget.projectmodel\\6.11.0\\nuget.projectmodel.6.11.0.nupkg.sha512",
     "C:\\Users\\nonch\\.nuget\\packages\\nuget.protocol\\6.11.0\\nuget.protocol.6.11.0.nupkg.sha512",
     "C:\\Users\\nonch\\.nuget\\packages\\nuget.versioning\\6.11.0\\nuget.versioning.6.11.0.nupkg.sha512",
+    "C:\\Users\\nonch\\.nuget\\packages\\selenium.support\\4.36.0\\selenium.support.4.36.0.nupkg.sha512",
+    "C:\\Users\\nonch\\.nuget\\packages\\selenium.webdriver\\4.36.0\\selenium.webdriver.4.36.0.nupkg.sha512",
+    "C:\\Users\\nonch\\.nuget\\packages\\selenium.webdriverbackedselenium\\4.1.0\\selenium.webdriverbackedselenium.4.1.0.nupkg.sha512",
     "C:\\Users\\nonch\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\nonch\\.nuget\\packages\\system.codedom\\5.0.0\\system.codedom.5.0.0.nupkg.sha512",
     "C:\\Users\\nonch\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",

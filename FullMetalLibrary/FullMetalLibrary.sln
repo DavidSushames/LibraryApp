@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMLTestProject", "..\FMLTestProject\FMLTestProject.csproj", "{CFA54AB0-1653-46EB-9993-F4C332180F09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FML_AutomationTestProject", "..\FML_AutomationTestProject\FML_AutomationTestProject.csproj", "{1AA76480-38C7-46EF-A431-5DBD54904E6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{CFA54AB0-1653-46EB-9993-F4C332180F09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFA54AB0-1653-46EB-9993-F4C332180F09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFA54AB0-1653-46EB-9993-F4C332180F09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AA76480-38C7-46EF-A431-5DBD54904E6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA76480-38C7-46EF-A431-5DBD54904E6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA76480-38C7-46EF-A431-5DBD54904E6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA76480-38C7-46EF-A431-5DBD54904E6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

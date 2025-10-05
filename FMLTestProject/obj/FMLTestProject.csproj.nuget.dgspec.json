@@ -77,6 +77,18 @@
             "Moq": {
               "target": "Package",
               "version": "[4.20.72, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.36.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.36.0, )"
+            },
+            "Selenium.WebDriverBackedSelenium": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             }
           },
           "imports": [
@@ -166,6 +178,18 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.7, )"
+            },
+            "Selenium.Support": {
+              "target": "Package",
+              "version": "[4.36.0, )"
+            },
+            "Selenium.WebDriver": {
+              "target": "Package",
+              "version": "[4.36.0, )"
+            },
+            "Selenium.WebDriverBackedSelenium": {
+              "target": "Package",
+              "version": "[4.1.0, )"
             }
           },
           "imports": [

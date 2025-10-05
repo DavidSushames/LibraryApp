@@ -830,3 +830,9 @@ C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Codin
 C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FMLTestProject\obj\Debug\net8.0\FMLTestProject.pdb
 C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FMLTestProject\obj\Debug\net8.0\FMLTestProject.genruntimeconfig.cache
 C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FMLTestProject\obj\Debug\net8.0\ref\FMLTestProject.dll
+C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FMLTestProject\bin\Debug\net8.0\WebDriver.Support.dll
+C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FMLTestProject\bin\Debug\net8.0\WebDriver.dll
+C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FMLTestProject\bin\Debug\net8.0\Selenium.WebDriverBackedSelenium.dll
+C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FMLTestProject\bin\Debug\net8.0\runtimes\linux\native\selenium-manager
+C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FMLTestProject\bin\Debug\net8.0\runtimes\osx\native\selenium-manager
+C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FMLTestProject\bin\Debug\net8.0\runtimes\win\native\selenium-manager.exe
