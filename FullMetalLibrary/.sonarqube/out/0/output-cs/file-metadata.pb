@@ -1,0 +1,23 @@
+µ
+©C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\obj\Debug\net8.0\FullMetalLibrary.RazorAssemblyInfo.csutf-8∞
+§C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\obj\Debug\net8.0\FullMetalLibrary.AssemblyInfo.csutf-8æ
+≤C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.csutf-8≤
+¶C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\obj\Debug\net8.0\FullMetalLibrary.GlobalUsings.g.csutf-8Ü
+}C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Program.csutf-8è
+ÖC:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Models\SeedData.csutf-8ò
+éC:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Models\RegisterViewModel.csutf-8ï
+ãC:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Models\PasswordHelper.csutf-8ï
+ãC:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Models\ErrorViewModel.csutf-8ï
+ãC:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Models\LoginViewModel.csutf-8ã
+ÅC:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Models\Book.csutf-8ç
+ÉC:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Models\Author.csutf-8å
+ÇC:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Models\Admin.csutf-8±
+•C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Migrations\FullMetalLibraryContextModelSnapshot.csutf-8≤
+¶C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Migrations\20250927030722_InitialCreate.Designer.csutf-8ß
+ùC:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Migrations\20250927030722_InitialCreate.csutf-8ë
+áC:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Filter\AuthFilter.csutf-8ú
+íC:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Data\FullMetalLibraryContext.csutf-8ö
+êC:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Controllers\HomeController.csutf-8õ
+ëC:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Controllers\BooksController.csutf-8ù
+ìC:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Controllers\AuthorsController.csutf-8ú
+íC:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FullMetalLibrary\Controllers\AdminsController.csutf-8

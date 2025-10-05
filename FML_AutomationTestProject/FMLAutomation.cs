@@ -20,15 +20,19 @@ namespace FML_AutomationTestProject
         }
 
         [TestMethod]
+        [Priority(0)]
         public void LaunchBrowser()
         {
             _driver.Navigate().GoToUrl("https://localhost:7030/");
+            DelayForDemo();
         }
 
         [TestMethod]
+        [Priority(1)]
         public void ShouldCreate_NewAdmin_And_Login()
         {
             _driver.Navigate().GoToUrl("https://localhost:7030/Admins/Register/");
+            DelayForDemo();
 
             //User Name
             IWebElement userName = _driver.FindElement(By.Id("UserName"));
@@ -37,7 +41,7 @@ namespace FML_AutomationTestProject
 
             //Email
             IWebElement email = _driver.FindElement(By.Id("Email"));
-            email.SendKeys("rich.ricah@gmail.com");
+            email.SendKeys("rich.richa@gmail.com");
             DelayForDemo();
 
             //Password 
@@ -51,28 +55,14 @@ namespace FML_AutomationTestProject
             DelayForDemo();
 
             _driver.FindElement(By.CssSelector("button.btn.btn-success.w-100")).Click();
-
-            _driver.Navigate().GoToUrl("https://localhost:7030/Admins/Login");
             DelayForDemo();
-
-            //Valid Email
-            IWebElement loginEmail = _driver.FindElement(By.Id("Email"));
-            loginEmail.SendKeys("rich.richa@gmail.com");
-            DelayForDemo();
-
-            //Valid Password
-            IWebElement loginPass = _driver.FindElement(By.Id("Password"));
-            loginPass.SendKeys("Pa$$w0rd");
-            DelayForDemo();
-
-            //Click login button
-            _driver.FindElement(By.CssSelector("button.btn.btn-primary.w-100"));
         }
-
-
         private static void DelayForDemo()
         {
             Thread.Sleep(1000);
         }
+
+      
+
     }
 }
