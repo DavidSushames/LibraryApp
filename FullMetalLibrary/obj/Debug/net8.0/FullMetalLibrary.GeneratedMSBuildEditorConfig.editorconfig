@@ -17,113 +17,113 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FullMetalLibrary
 build_property.RootNamespace = FullMetalLibrary
-build_property.ProjectDir = C:\Users\shont\source\repos\LibraryApp\FullMetalLibrary\
+build_property.ProjectDir = C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FullMetalLibrary\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\shont\source\repos\LibraryApp\FullMetalLibrary
+build_property.MSBuildProjectDirectory = C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FullMetalLibrary
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Admins/Create.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Admins/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Admins/Delete.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Admins/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Admins/Details.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Admins/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Admins/Edit.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Admins/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Admins/Index.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Admins/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Admins/Login.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Admins/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXExvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Admins/Register.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Admins/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5zXFJlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Authors/Create.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Authors/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Authors/Delete.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Authors/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Authors/Details.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Authors/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Authors/Edit.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Authors/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Authors/Index.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Authors/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Books/Create.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Books/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Books/Delete.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Books/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Books/Details.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Books/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Books/Edit.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Books/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Books/Index.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Books/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9va3NcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/FMLUnitTest/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRk1MVW5pdFRlc3RcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Home/Index.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Home/Privacy.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Shared/Error.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/_ViewImports.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/TestPage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFBhZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/_ViewStart.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/shont/source/repos/LibraryApp/FullMetalLibrary/Views/Shared/_Layout.cshtml]
+[C:/Users/nonch/Desktop/Year2_2025_WelTec/WelTec_Y2/T2/Testing & Secure Coding/Groupe Project/LibraryApp/FullMetalLibrary/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-w2jhfwtyqg

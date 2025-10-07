@@ -1402,12 +1402,11 @@ namespace FMLTestProject.Controllers
         public void IsStrongPassword_NullOrEmpty_ReturnsFalse()
         {
             // Act & Assert
-            Assert.IsFalse(AdminsController.IsStrongPassword(""));
-            Assert.IsFalse(AdminsController.IsStrongPassword(null));
+            Assert.IsFalse(AdminsController.IsStrongPassword(String.Empty));
+            Assert.IsFalse(AdminsController.IsStrongPassword(String.Empty));
         }
     }
 
-    // ===== SIMPLE SESSION IMPLEMENTATION =====
     public class TestSession : ISession
     {
         private readonly Dictionary<string, byte[]> _storage = new Dictionary<string, byte[]>();

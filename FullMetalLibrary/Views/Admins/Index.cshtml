@@ -12,8 +12,8 @@
     </p>
 </form>
 <div class="btn-group mb-3">
-    <a asp-action="Index" asp-route-sortOrder="az" asp-route-searchString="@ViewData["CurrentFilter"]" class="btn btn-outline-primary">⬆</a>
-    <a asp-action="Index" asp-route-sortOrder="za" asp-route-searchString="@ViewData["CurrentFilter"]" class="btn btn-outline-primary">⬇</a>
+    <a asp-action="Index" asp-route-sortOrder="az" asp-route-searchString="@ViewData["CurrentFilter"]" class="btn btn-outline-primary">⇈</a>
+    <a asp-action="Index" asp-route-sortOrder="za" asp-route-searchString="@ViewData["CurrentFilter"]" class="btn btn-outline-primary">⇊</a>
 </div>
 
 @if (ViewBag.NotFoundMessage != null)

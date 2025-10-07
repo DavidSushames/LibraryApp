@@ -45,7 +45,7 @@ namespace FullMetalLibrary.Controllers
             {
                 "za" => authors.OrderByDescending(a => a.LastName).ThenByDescending(a => a.FirstName),
                 "az" => authors.OrderBy(a => a.LastName).ThenBy(a => a.FirstName),
-                _ => authors.OrderBy(a => a.LastName).ThenBy(a => a.FirstName) // default A–Z
+                _ => authors.OrderBy(a => a.LastName).ThenBy(a => a.FirstName) 
             };
 
             return View(await authors.ToListAsync());
