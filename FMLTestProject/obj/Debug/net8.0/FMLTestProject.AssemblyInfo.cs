@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FMLTestProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f944e4b7c66f45b13ab34f72b33789b1df09afd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ef3df03b3abe0e7722e82aa997e745bb6c64d37")]
 [assembly: System.Reflection.AssemblyProductAttribute("FMLTestProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FMLTestProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
