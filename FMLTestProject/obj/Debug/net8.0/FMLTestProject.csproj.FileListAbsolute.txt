@@ -836,6 +836,7 @@ C:\Users\shont\source\repos\LibraryApp\FMLTestProject\obj\Debug\net8.0\FMLTestPr
 C:\Users\shont\source\repos\LibraryApp\FMLTestProject\obj\Debug\net8.0\FMLTestP.0ABA4E71.Up2Date
 C:\Users\shont\source\repos\LibraryApp\FMLTestProject\obj\Debug\net8.0\FMLTestProject.genruntimeconfig.cache
 C:\Users\shont\source\repos\LibraryApp\FMLTestProject\obj\Debug\net8.0\ref\FMLTestProject.dll
+<<<<<<< HEAD
 C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FMLTestProject\bin\Debug\net8.0\.msCoverageSourceRootsMapping_FMLTestProject
 C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FMLTestProject\bin\Debug\net8.0\testhost.dll
 C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FMLTestProject\bin\Debug\net8.0\FullMetalLibrary.deps.json
@@ -1258,3 +1259,11 @@ C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Gr
 C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FMLTestProject\obj\Debug\net8.0\FMLTestProject.pdb
 C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FMLTestProject\obj\Debug\net8.0\FMLTestProject.genruntimeconfig.cache
 C:\Users\nonch\Desktop\Year2_2025_WelTec\WelTec_Y2\T2\Testing & Secure Coding\Groupe Project\LibraryApp\FMLTestProject\obj\Debug\net8.0\ref\FMLTestProject.dll
+=======
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FMLTestProject\bin\Debug\net8.0\WebDriver.Support.dll
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FMLTestProject\bin\Debug\net8.0\WebDriver.dll
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FMLTestProject\bin\Debug\net8.0\Selenium.WebDriverBackedSelenium.dll
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FMLTestProject\bin\Debug\net8.0\runtimes\linux\native\selenium-manager
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FMLTestProject\bin\Debug\net8.0\runtimes\osx\native\selenium-manager
+C:\Users\Dave\OneDrive - Whitireia and WelTec\Documents\Testing and Secure Coding\GroupAssignment\FMLTestProject\bin\Debug\net8.0\runtimes\win\native\selenium-manager.exe
+>>>>>>> d9f2fb977a0baac8e441c54f0f484b880f8bf346

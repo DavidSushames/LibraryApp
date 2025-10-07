@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fullmetallibrary\\views\\testpage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:views\\testpage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fullmetallibrary\\controllers\\testpagecontrollercs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:controllers\\testpagecontrollercs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fullmetallibrary\\views\\testpage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{050831B7-9830-48EA-8146-047173C90E2C}|FullMetalLibrary.csproj|solutionrelative:views\\testpage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1AA76480-38C7-46EF-A431-5DBD54904E6B}|..\\FML_AutomationTestProject\\FML_AutomationTestProject.csproj|c:\\users\\nonch\\desktop\\year2_2025_weltec\\weltec_y2\\t2\\testing \u0026 secure coding\\groupe project\\libraryapp\\fml_automationtestproject\\fmlautomation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -21,7 +21,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -31,11 +31,10 @@
               "RelativeDocumentMoniker": "..\\FML_AutomationTestProject\\FMLAutomation.cs",
               "ToolTip": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FML_AutomationTestProject\\FMLAutomation.cs",
               "RelativeToolTip": "..\\FML_AutomationTestProject\\FMLAutomation.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAuwG8AAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAuwJQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-04T07:06:30.319Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -55,26 +54,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Views\\TestPage\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\TestPage\\Index.cshtml",
               "ToolTip": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Views\\TestPage\\Index.cshtml",
               "RelativeToolTip": "Views\\TestPage\\Index.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-07T06:31:49.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-07T06:31:49.769Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "TestPageControllercs.cs",
               "DocumentMoniker": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Controllers\\TestPageControllercs.cs",
               "RelativeDocumentMoniker": "Controllers\\TestPageControllercs.cs",
               "ToolTip": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing \u0026 Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\Controllers\\TestPageControllercs.cs",
               "RelativeToolTip": "Controllers\\TestPageControllercs.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAmwBoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-07T06:20:15.935Z",
               "EditorCaption": ""
