@@ -134,7 +134,7 @@ namespace FMLTestProject.Controllers
         private void SetupMockHttpContext()
         {
             var httpContext = new DefaultHttpContext();
-            var claims = new List<Claim> { new Claim(ClaimTypes.Name, "testadmin") };
+            List<Claim> claims = [new(ClaimTypes.Name, "testadmin")];
             var identity = new ClaimsIdentity(claims, "TestAuth");
             httpContext.User = new ClaimsPrincipal(identity);
             _controller.ControllerContext = new ControllerContext { HttpContext = httpContext };
@@ -559,7 +559,8 @@ namespace FMLTestProject.Controllers
             var method = typeof(BooksController).GetMethod("BookExists",
                 System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
 
-            var result = (bool)method.Invoke(_controller, new object[] { 1 });
+            var result = (bool)method.Invoke(_controller, [1]);
+
 
             // Assert
             Assert.IsTrue(result);
@@ -572,7 +573,7 @@ namespace FMLTestProject.Controllers
             var method = typeof(BooksController).GetMethod("BookExists",
                 System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
 
-            var result = (bool)method.Invoke(_controller, new object[] { 999 });
+            var result = (bool)method.Invoke(_controller, [999]);
 
             // Assert
             Assert.IsFalse(result);
@@ -657,7 +658,7 @@ namespace FMLTestProject.Controllers
         private void SetupMockHttpContext()
         {
             var httpContext = new DefaultHttpContext();
-            var claims = new List<Claim> { new Claim(ClaimTypes.Name, "testadmin") };
+            List<Claim> claims = [new(ClaimTypes.Name, "testadmin")];
             var identity = new ClaimsIdentity(claims, "TestAuth");
             httpContext.User = new ClaimsPrincipal(identity);
             _controller.ControllerContext = new ControllerContext { HttpContext = httpContext };
@@ -665,14 +666,14 @@ namespace FMLTestProject.Controllers
 
         private void SeedTestAuthors()
         {
-            var authors = new List<Author>
-        {
-            new Author { Id = 1, FirstName = "Stephen", LastName = "King" },
-            new Author { Id = 2, FirstName = "George", LastName = "Orwell" },
-            new Author { Id = 3, FirstName = "J.K.", LastName = "Rowling" },
-            new Author { Id = 4, FirstName = "J.R.R.", LastName = "Tolkien" },
-            new Author { Id = 5, FirstName = "Agatha", LastName = "Christie" }
-        };
+            List<Author> authors =
+            [
+                new() { Id = 1, FirstName = "Stephen", LastName = "King" },
+                new() { Id = 2, FirstName = "George", LastName = "Orwell" },
+                new() { Id = 3, FirstName = "J.K.", LastName = "Rowling" },
+                new() { Id = 4, FirstName = "J.R.R.", LastName = "Tolkien" },
+                new() { Id = 5, FirstName = "Agatha", LastName = "Christie" }
+            ];
 
             _context.Author.AddRange(authors);
             _context.SaveChanges();
@@ -1067,7 +1068,7 @@ namespace FMLTestProject.Controllers
             var method = typeof(AuthorsController).GetMethod("AuthorExists",
                 System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
 
-            var result = (bool)method.Invoke(_controller, new object[] { 1 });
+            var result = (bool)method.Invoke(_controller, [1] );
 
             // Assert
             Assert.IsTrue(result);
@@ -1080,7 +1081,7 @@ namespace FMLTestProject.Controllers
             var method = typeof(AuthorsController).GetMethod("AuthorExists",
                 System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance);
 
-            var result = (bool)method.Invoke(_controller, new object[] { 999 });
+            var result = (bool)method.Invoke(_controller, [999] );
 
             // Assert
             Assert.IsFalse(result);
@@ -1126,7 +1127,9 @@ namespace FMLTestProject.Controllers
             httpContext.Session = session;
 
             // ADD AUTHENTICATION FOR AuthFilter
-            var claims = new List<Claim> { new Claim(ClaimTypes.Name, userName ?? "testuser") };
+            List<Claim> claims = [new(ClaimTypes.Name, userName ?? "testuser")];
+
+
             var identity = new ClaimsIdentity(claims, "TestAuth");
             httpContext.User = new ClaimsPrincipal(identity);
 
@@ -1409,8 +1412,7 @@ namespace FMLTestProject.Controllers
 
     public class TestSession : ISession
     {
-        private readonly Dictionary<string, byte[]> _storage = new Dictionary<string, byte[]>();
-
+        private readonly Dictionary<string, byte[]> _storage = new();
         public string Id => "TestSessionId";
         public bool IsAvailable => true;
         public IEnumerable<string> Keys => _storage.Keys;

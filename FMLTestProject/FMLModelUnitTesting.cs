@@ -15,7 +15,7 @@ namespace FMLTestProject
     [TestClass]
     public class SeedDataTests
     {
-        private FullMetalLibraryContext GetInMemoryContext()
+        private static FullMetalLibraryContext GetInMemoryContext()
         {
             var options = new DbContextOptionsBuilder<FullMetalLibraryContext>()
                 .UseInMemoryDatabase(Guid.NewGuid().ToString())
@@ -55,7 +55,7 @@ namespace FMLTestProject
     [TestClass]
     public class RegisterViewModelTests
     {
-        private IList<ValidationResult> ValidationModel(RegisterViewModel model)
+        private static List<ValidationResult> ValidationModel(RegisterViewModel model)
         {
             var context = new ValidationContext(model, null, null);
             var result = new List<ValidationResult>();
@@ -193,7 +193,7 @@ namespace FMLTestProject
     [TestClass]
     public class LoginViewModelTests
     {
-        private List<ValidationResult> ValidationModel(LoginViewModel model)
+        private static List<ValidationResult> ValidationModel(LoginViewModel model)
         {
             var results = new List<ValidationResult>();
             var context = new ValidationContext(model, null, null);
@@ -305,7 +305,7 @@ namespace FMLTestProject
     [TestClass]
     public class BookModelTests
     {
-        private IList<ValidationResult> ValidationResults(Book model)
+        private static List<ValidationResult> ValidationResults(Book model)
         {
             var result = new List<ValidationResult>();
             var context = new ValidationContext(model, null, null);
@@ -365,7 +365,9 @@ namespace FMLTestProject
 
                 var result = ValidationResults(book);
 
-                Assert.IsFalse(result.Any(), $"Expected no validation errors from genre '{genre}, but got: {string.Join(", ", result.Select(r => r.ErrorMessage))}");
+                Assert.IsTrue(result.Count == 0,
+                $"Expected no validation errors from genre '{genre}', but got: {string.Join(", ", result.Select(r => r.ErrorMessage))}");
+
             }
         }
 
@@ -386,7 +388,7 @@ namespace FMLTestProject
                 };
 
                 var result = ValidationResults(book);
-                Assert.IsTrue(result.Any(), $"Expected validation errors from genre '{genre}', but got none.");
+                Assert.IsTrue(result.Count == 0,  $"Expected validation errors from genre '{genre}', but got none.");
             }
         }
 
@@ -395,7 +397,7 @@ namespace FMLTestProject
     [TestClass]
     public class AuthorModelTests
     {
-        private IList<ValidationResult> ValidateModel(Author model)
+        private static List<ValidationResult> ValidateModel(Author model)
         {
             var result = new List<ValidationResult>();
             var context = new ValidationContext(model, null, null);
@@ -465,7 +467,7 @@ namespace FMLTestProject
     [TestClass]
     public class AdminModelTests
     {
-        private IList<ValidationResult> ValidateModel(Admin model)
+        private static List<ValidationResult> ValidateModel(Admin model)
         {
             var result = new List<ValidationResult>();
             var context = new ValidationContext(model, null, null);

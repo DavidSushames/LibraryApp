@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FML_AutomationTestProject\\FML_AutomationTestProject.csproj": {}
+    "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FML_AutomationTestProject\\FML_AutomationTestProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FMLTestProject\\FMLTestProject.csproj": {
+    "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\FMLTestProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FMLTestProject\\FMLTestProject.csproj",
+        "projectUniqueName": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\FMLTestProject.csproj",
         "projectName": "FMLTestProject",
-        "projectPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FMLTestProject\\FMLTestProject.csproj",
-        "packagesPath": "C:\\Users\\nonch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FMLTestProject\\obj\\",
+        "projectPath": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\FMLTestProject.csproj",
+        "packagesPath": "C:\\Users\\Dave\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nonch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dave\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\FullMetalLibrary.csproj": {
-                "projectPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\FullMetalLibrary.csproj"
+              "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\FullMetalLibrary.csproj": {
+                "projectPath": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\FullMetalLibrary.csproj"
               }
             }
           }
@@ -111,20 +112,20 @@
         }
       }
     },
-    "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FML_AutomationTestProject\\FML_AutomationTestProject.csproj": {
+    "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FML_AutomationTestProject\\FML_AutomationTestProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FML_AutomationTestProject\\FML_AutomationTestProject.csproj",
+        "projectUniqueName": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FML_AutomationTestProject\\FML_AutomationTestProject.csproj",
         "projectName": "FML_AutomationTestProject",
-        "projectPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FML_AutomationTestProject\\FML_AutomationTestProject.csproj",
-        "packagesPath": "C:\\Users\\nonch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FML_AutomationTestProject\\obj\\",
+        "projectPath": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FML_AutomationTestProject\\FML_AutomationTestProject.csproj",
+        "packagesPath": "C:\\Users\\Dave\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FML_AutomationTestProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nonch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dave\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -133,14 +134,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FMLTestProject\\FMLTestProject.csproj": {
-                "projectPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FMLTestProject\\FMLTestProject.csproj"
+              "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\FMLTestProject.csproj": {
+                "projectPath": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\FMLTestProject.csproj"
               }
             }
           }
@@ -214,20 +216,20 @@
         }
       }
     },
-    "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\FullMetalLibrary.csproj": {
+    "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\FullMetalLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\FullMetalLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\FullMetalLibrary.csproj",
         "projectName": "FullMetalLibrary",
-        "projectPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\FullMetalLibrary.csproj",
-        "packagesPath": "C:\\Users\\nonch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\LibraryApp\\FullMetalLibrary\\obj\\",
+        "projectPath": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\FullMetalLibrary.csproj",
+        "packagesPath": "C:\\Users\\Dave\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nonch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Dave\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -236,6 +238,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

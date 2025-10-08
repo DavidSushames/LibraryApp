@@ -7,14 +7,9 @@ using Microsoft.EntityFrameworkCore;
 namespace FullMetalLibrary.Controllers
 {
     [AuthFilter]
-    public class TestPageController : Controller
+    public class TestPageController(FullMetalLibraryContext context) : Controller
     {
-        private readonly FullMetalLibraryContext _context;
-
-        public TestPageController(FullMetalLibraryContext context)
-        {
-            _context = context;
-        }
+        private readonly FullMetalLibraryContext _context = context;
 
         public async Task<IActionResult> Index()
         {

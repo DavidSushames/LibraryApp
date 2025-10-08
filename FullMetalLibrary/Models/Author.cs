@@ -21,6 +21,7 @@ namespace FullMetalLibrary.Models
         public string Name => $"{FirstName} {LastName}".Trim();
 
         public ICollection<Book> Books { get; set; } = new List<Book>();
+
     }
 }
 

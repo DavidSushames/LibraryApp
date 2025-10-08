@@ -13,14 +13,9 @@ namespace FullMetalLibrary.Controllers
 {
 
     [AuthFilter]
-    public class AuthorsController : Controller
+    public class AuthorsController(FullMetalLibraryContext context) : Controller
     {
-        private readonly FullMetalLibraryContext _context;
-
-        public AuthorsController(FullMetalLibraryContext context)
-        {
-            _context = context;
-        }
+        private readonly FullMetalLibraryContext _context = context;
 
         // GET: Authors
         public async Task<IActionResult> Index(string sortOrder, string searchString)
