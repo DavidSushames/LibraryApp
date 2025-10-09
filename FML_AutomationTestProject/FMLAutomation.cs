@@ -6,114 +6,109 @@ namespace FML_AutomationTestProject
     [TestClass]
     public sealed class FMLAutomation
     {
-        public sealed class Test1
+        private static ChromeDriver _driver;
+
+        [ClassInitialize]
+        public static void Setup(TestContext context)
         {
-            private static ChromeDriver _driver;
+            var options = new ChromeOptions();
+            options.AddArgument("--start-maximized");
+            options.AddArgument("--ignore-certificate-errors");
 
-            [ClassInitialize]
-            public static void Setup(TestContext context)
-            {
-                var options = new ChromeOptions();
-                options.AddArgument("--start-maximized");
-                options.AddArgument("--ignore-certificate-errors");
+            _driver = new ChromeDriver(options);
+            Console.WriteLine("Chrome opens for once for all test cases.");
+        }
 
-                _driver = new ChromeDriver(options);
-                Console.WriteLine("Chrome opens for once for all test cases.");
-            }
+        [ClassCleanup]
+        public static void Cleanup()
+        {
+            //this will close the tabs after all the test are run 
+            _driver.Quit();
+            Console.WriteLine("Chrome browser closed after all tests");
+        }
 
-            [ClassCleanup]
-            public static void Cleanup()
-            {
-                //this will close the tabs after all the test are run 
-                _driver.Quit();
-                Console.WriteLine("Chrome browser closed after all tests");
-            }
+        [TestMethod]
+        public void LaunchBrowser()
+        {
+            _driver.Navigate().GoToUrl("https://localhost:7030/");
+        }
 
-            [TestMethod]
-            public void LaunchBrowser()
-            {
-                _driver.Navigate().GoToUrl("https://localhost:7030/");
-            }
+        [TestMethod]
+        public void FullMetalLibrary_AutomationTests()
+        {
+            _driver.Navigate().GoToUrl("https://localhost:7030/Admins/Register/");
+            DelayForDemo();
 
-            [TestMethod]
-            public void FullMetalLibrary_AutomationTests()
-            {
-                _driver.Navigate().GoToUrl("https://localhost:7030/Admins/Register/");
-                DelayForDemo();
+            //User Name
+            IWebElement userName = _driver.FindElement(By.Id("UserName"));
+            userName.Clear();
+            userName.SendKeys("TestUser");
+            DelayForDemo();
 
-                //User Name
-                IWebElement userName = _driver.FindElement(By.Id("UserName"));
-                userName.Clear();
-                userName.SendKeys("TestUser");
-                userName.SendKeys("Richa");
-                DelayForDemo();
+            //Email
+            IWebElement email = _driver.FindElement(By.Id("Email"));
+            email.Clear();
+            email.SendKeys("test.user@gmail.com");
+            DelayForDemo();
 
-                //Email
-                IWebElement email = _driver.FindElement(By.Id("Email"));
-                email.Clear();
-                email.SendKeys("test.user@gmail.com");
-                email.SendKeys("rich.richa@gmail.com");
-                DelayForDemo();
+            //Password 
+            IWebElement password = _driver.FindElement(By.Id("Password"));
+            password.Clear();
+            password.SendKeys("Pa$$w0rd");
+            DelayForDemo();
 
-                //Password 
-                IWebElement password = _driver.FindElement(By.Id("Password"));
-                password.Clear();
-                password.SendKeys("Pa$$w0rd");
-                DelayForDemo();
+            //Confirm password
+            IWebElement confirmPass = _driver.FindElement(By.Id("ConfirmPassword"));
+            confirmPass.Clear();
+            confirmPass.SendKeys("Pa$$w0rd");
+            DelayForDemo();
 
-                //Confirm password
-                IWebElement confirmPass = _driver.FindElement(By.Id("ConfirmPassword"));
-                confirmPass.Clear();
-                confirmPass.SendKeys("Pa$$w0rd");
-                DelayForDemo();
+            _driver.FindElement(By.CssSelector("button.btn.btn-success.w-100")).Click();
 
-                _driver.FindElement(By.CssSelector("button.btn.btn-success.w-100")).Click();
+            //Login
+            _driver.Navigate().GoToUrl("https://localhost:7030/Admins/Login");
+            DelayForDemo();
 
-                //Login
-                _driver.Navigate().GoToUrl("https://localhost:7030/Admins/Login");
-                DelayForDemo();
+            //Valid Email
+            IWebElement loginEmail = _driver.FindElement(By.Id("Email"));
+            loginEmail.Clear();
+            loginEmail.SendKeys("test.user@gmail.com");
+            DelayForDemo();
 
-                //Valid Email
-                IWebElement loginEmail = _driver.FindElement(By.Id("Email"));
-                loginEmail.Clear();
-                loginEmail.SendKeys("test.user@gmail.com");
-                DelayForDemo();
+            //Valid Password
+            IWebElement loginPass = _driver.FindElement(By.Id("Password"));
+            loginPass.Clear();
+            loginPass.SendKeys("Pa$$w0rd");
+            DelayForDemo();
 
-                //Valid Password
-                IWebElement loginPass = _driver.FindElement(By.Id("Password"));
-                loginPass.Clear();
-                loginPass.SendKeys("Pa$$w0rd");
-                DelayForDemo();
+            //Click login button
+            _driver.FindElement(By.CssSelector("button.btn.btn-primary.w-100")).Click();
 
-                //Click login button
-                _driver.FindElement(By.CssSelector("button.btn.btn-primary.w-100")).Click();
+            _driver.Navigate().GoToUrl("https://localhost:7030/Books/");
+            DelayForDemo();
 
-                _driver.Navigate().GoToUrl("https://localhost:7030/Books/");
-                DelayForDemo();
+            _driver.Navigate().GoToUrl("https://localhost:7030/Books/Create/");
+            DelayForDemo();
 
-                _driver.Navigate().GoToUrl("https://localhost:7030/Books/Create/");
-                DelayForDemo();
+            //_driver.FindElement(By.CssSelector("button.btn.btn-success.w-100")).Click();
+            //DelayForDemo();
 
-                //_driver.FindElement(By.CssSelector("button.btn.btn-success.w-100")).Click();
-                //DelayForDemo();
+            IWebElement title = _driver.FindElement(By.Id("Title"));
+            title.Clear();
+            title.SendKeys("The Book Name");
+            DelayForDemo();
 
-                IWebElement title = _driver.FindElement(By.Id("Title"));
-                title.Clear();
-                title.SendKeys("The Book Name");
-                DelayForDemo();
+            IWebElement author = _driver.FindElement(By.Id("AuthorId"));
+            author.SendKeys("1");
 
-                IWebElement author = _driver.FindElement(By.Id("AuthorId"));
-                author.SendKeys("1");
+            IWebElement selectDate = _driver.FindElement(By.Id("PublishDate"));
+            selectDate.Clear();
+            selectDate.SendKeys("1994-10-06");
+        }
 
-                IWebElement selectDate = _driver.FindElement(By.Id("PublishDate"));
-                selectDate.Clear();
-                selectDate.SendKeys("1994-10-06");
-            }
-
-            private static void DelayForDemo()
-            {
-                Thread.Sleep(1000);
-            }
+        private static void DelayForDemo()
+        {
+            Thread.Sleep(1000);
         }
     }
 }
