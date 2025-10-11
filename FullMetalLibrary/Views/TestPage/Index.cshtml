@@ -1,25 +1,37 @@
-﻿@model IEnumerable<FullMetalLibrary.Models.Book>
+﻿@model FullMetalLibrary.Controllers.TestPageViewModel
 
 @{
-    ViewData["Title"] = "Test Books Index";
+    ViewData["Title"] = "Test Results";
 }
 
-<h1>Test Books</h1>
+<h1 class="text-center mb-4"> Full Metal Library Test Results</h1>
 
-<table class="table">
-    <thead>
+<h2>Test Books</h2>
+<table class="table table-striped mb-5">
+    <thead class="table-dark">
         <tr>
             <th>Title</th>
-            <th>Publish Date</th>
+            <th>Author</th>
+            <th>Published Date</th>
             <th>Genre</th>
             <th>Available</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @foreach (var item in Model.Books)
         {
             <tr>
                 <td>@item.Title</td>
+                <td>
+                    @if (item.Author != null)
+                    {
+                        @item.Author.Name
+                    }
+                    else
+                    {
+                        <span class="text-muted">Unknown</span>
+                    }
+                </td>
                 <td>@item.PublishDate.ToString("yyyy-MM-dd")</td>
                 <td>@item.Genre</td>
                 <td>@(item.Available ? "Yes" : "No")</td>
@@ -27,3 +39,50 @@
         }
     </tbody>
 </table>
+
+<h2>Test Author</h2>
+<table class="table table-striped mb-5">
+    <thead class="table-dark">
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Authors)
+        {
+            <tr>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Test Admins</h2>
+<table class="table table-striped mb-5">
+    <thead class="table-dark">
+        <tr>
+            <th>User Name</th>
+            <th>Email</th>
+            <th>Active</th>
+            <th>Created</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Admins)
+        {
+            <tr>
+                <td>@item.UserName</td>
+                <td>@item.EmailAddress</td>
+                <td>@(item.IsActive ? "Yes" : "No")</td>
+                <td>@item.CreatedAt.ToString("yyyy-MM-dd")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="text-center mt-3">
+    <a asp-asp-controller="Home" asp-action="Index" class="btn btn-outline-secondary">Back to Home</a>
+</div>
+

@@ -18,7 +18,24 @@ namespace FullMetalLibrary.Controllers
                 .OrderBy(b => b.Title)
                 .ToListAsync();
 
-            return View(books);
+            var auhors = await _context.Author
+                .OrderBy(a => a.FirstName)
+                .ThenBy(a => a.LastName)
+                .ToListAsync();
+
+            var admins = await _context.Admin
+                .OrderBy(a => a.UserName)
+                .ToListAsync();
+
+            //this helps to view all the data (model data i guess)
+            var viewModel = new TestPageViewModel
+            {
+                Books = books,
+                Authors = auhors,
+                Admins = admins
+            };
+
+            return View(viewModel);
         }
 
         public async Task<IActionResult> Details(int? id)
@@ -39,5 +56,14 @@ namespace FullMetalLibrary.Controllers
 
             return View(book);
         }
+
     }
+}
+
+public class TestPageViewModel
+{
+    public List<FullMetalLibrary.Models.Book> Books { get; set; }
+    public List<FullMetalLibrary.Models.Author> Authors { get; set; }
+    public List<FullMetalLibrary.Models.Admin> Admins { get; set; }
+
 }

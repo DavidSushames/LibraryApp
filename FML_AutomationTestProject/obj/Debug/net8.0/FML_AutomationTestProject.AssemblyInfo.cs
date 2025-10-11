@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FML_AutomationTestProject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1478ed8fc6c0aa889b079556b458ac8f40719d88")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7937a272f2bd1bfd0a266d15f3e1415479487e3")]
 [assembly: System.Reflection.AssemblyProductAttribute("FML_AutomationTestProject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FML_AutomationTestProject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
