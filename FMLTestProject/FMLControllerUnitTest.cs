@@ -9,7 +9,7 @@ using Moq;
 using System.Security.Claims; 
 using System.Text; 
 
-namespace FMLTestProject.Controllers
+namespace FullMetalLibraryTestProject
 {
     [TestClass]
     public class HomeControllerTests
