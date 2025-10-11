@@ -388,7 +388,7 @@ namespace FMLTestProject
                 };
 
                 var result = ValidationResults(book);
-                Assert.IsTrue(result.Count == 0,  $"Expected validation errors from genre '{genre}', but got none.");
+                Assert.IsTrue(result.Count > 0,  $"Expected validation errors from genre '{genre}', but got none.");
             }
         }
 
