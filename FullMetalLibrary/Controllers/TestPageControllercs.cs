@@ -59,11 +59,3 @@ namespace FullMetalLibrary.Controllers
 
     }
 }
-
-public class TestPageViewModel
-{
-    public List<FullMetalLibrary.Models.Book> Books { get; set; }
-    public List<FullMetalLibrary.Models.Author> Authors { get; set; }
-    public List<FullMetalLibrary.Models.Admin> Admins { get; set; }
-
-}

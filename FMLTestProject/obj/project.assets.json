@@ -9251,23 +9251,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nonch\\.nuget\\packages\\": {},
+    "C:\\Users\\Dave\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\FMLTestProject\\FMLTestProject.csproj",
+      "projectUniqueName": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\FMLTestProject.csproj",
       "projectName": "FMLTestProject",
-      "projectPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\FMLTestProject\\FMLTestProject.csproj",
-      "packagesPath": "C:\\Users\\nonch\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\FMLTestProject\\obj\\",
+      "projectPath": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\FMLTestProject.csproj",
+      "packagesPath": "C:\\Users\\Dave\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FMLTestProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\nonch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Dave\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -9276,14 +9276,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\FullMetalLibrary\\FullMetalLibrary.csproj": {
-              "projectPath": "C:\\Users\\nonch\\Desktop\\Year2_2025_WelTec\\WelTec_Y2\\T2\\Testing & Secure Coding\\Groupe Project\\FullMetalLibrary\\FullMetalLibrary.csproj"
+            "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\FullMetalLibrary.csproj": {
+              "projectPath": "C:\\Users\\Dave\\OneDrive - Whitireia and WelTec\\Documents\\Testing and Secure Coding\\GroupAssignment\\FullMetalLibrary\\FullMetalLibrary.csproj"
             }
           }
         }
@@ -9357,7 +9358,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
