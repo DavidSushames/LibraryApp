@@ -6,7 +6,7 @@ namespace FML_AutomationTestProject
     [TestClass]
     public sealed class FMLAutomation
     {
-        private static IWebDriver _driver;
+        private static ChromeDriver _driver;
 
         [ClassInitialize]
         public static void Setup(TestContext context)
