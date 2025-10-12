@@ -51,62 +51,6 @@ namespace FML_AutomationTestProject
             userName.SendKeys("Test User");
             DelayForDemo();
 
-            //Invalid email
-            //IWebElement invalidEmail = _driver.FindElement(By.Id("Email"));
-            //invalidEmail.Clear();
-            //invalidEmail.SendKeys("test-user-gmail.com");
-            //DelayForDemo();
-
-            //Invalid Password 
-            //IWebElement invalidPass = _driver.FindElement(By.Id("Password"));
-            //invalidPass.Clear();
-            //invalidPass.SendKeys("Password123");
-            //DelayForDemo();
-
-            //Password checking 
-            //IWebElement invalidConfrim = _driver.FindElement(By.Id("ConfirmPassword"));
-            //invalidConfrim.Clear();
-            //invalidConfrim.SendKeys("Password123");
-            //DelayForDemo();
-
-            //_driver.FindElement(By.CssSelector("button.btn.btn-success.w-100")).Click();
-            //DelayForDemo();
-
-            //IWebElement validEmail1 = _driver.FindElement(By.Id("Email"));
-            //validEmail1.Clear();
-            //validEmail1.SendKeys("test.user@gmail.com");
-            //DelayForDemo();
-
-            //IWebElement invalidPass1 = _driver.FindElement(By.Id("Password"));
-            //invalidPass1.Clear();
-            //invalidPass1.SendKeys("Password123");
-            //DelayForDemo();
-
-            //IWebElement confirmPass1 = _driver.FindElement(By.Id("ConfirmPassword"));
-            //confirmPass1.Clear();
-            //confirmPass1.SendKeys("Password123");
-            //DelayForDemo();
-
-            //_driver.FindElement(By.CssSelector("button.btn.btn-success.w-100")).Click();
-            //DelayForDemo();
-
-            //IWebElement validEmail2 = _driver.FindElement(By.Id("Email"));
-            //validEmail2.Clear();
-            //validEmail2.SendKeys("test.user@gmail.com");
-            //DelayForDemo();
-
-            //IWebElement validPass2 = _driver.FindElement(By.Id("Password"));
-            //validPass2.Clear();
-            //validPass2.SendKeys("Pa$$w0rd");
-
-            //IWebElement inavlidPass2 = _driver.FindElement(By.Id("ConfirmPassword"));
-            //inavlidPass2.Clear();
-            //inavlidPass2.SendKeys("Password123");
-            //DelayForDemo();
-
-            //_driver.FindElement(By.CssSelector("button.btn.btn-success.w-100")).Click();
-            //DelayForDemo();
-
             IWebElement validEmail3 = _driver.FindElement(By.Id("Email"));
             validEmail3.Clear();
             validEmail3.SendKeys("test.user@gmail.com");
@@ -124,7 +68,6 @@ namespace FML_AutomationTestProject
 
             _driver.FindElement(By.CssSelector("button.btn.btn-success.w-100")).Click();
             DelayForDemo();
-
 
             //Login page 
             _driver.Navigate().GoToUrl("https://localhost:7030/Admins/Login");
